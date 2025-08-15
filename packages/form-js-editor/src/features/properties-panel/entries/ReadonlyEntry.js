@@ -50,9 +50,9 @@ function Readonly(props) {
     feel: 'optional',
     getValue,
     id,
-    label: 'Read only',
+    label: 'فقط خواندنی',
     tooltip:
-      'Make this field read-only when it cannot be edited by the end-user, but its content is important for them to see. Its data will still be submitted.',
+      'وقتی این فیلد توسط کاربر نهایی قابل ویرایش نیست، اما دیدن محتوای آن برای او مهم است، آن را فقط خواندنی کنید. داده‌های آن همچنان ارسال خواهند شد.',
     setValue,
     variables,
   });

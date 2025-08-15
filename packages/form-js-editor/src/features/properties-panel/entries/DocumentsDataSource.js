@@ -51,25 +51,24 @@ function DocumentsDataSource(props) {
 
   const tooltip = (
     <div>
-      <p>A source is a JSON object containing metadata for a document or an array of documents.</p>
-      <p>Each entry must include a document ID, name, and MIME type.</p>
-      <p>Additional details are optional. The expected format is as follows:</p>
+      <p>یک منبع یک شیء JSON است که شامل فراداده برای یک سند یا آرایه‌ای از اسناد است.</p>
+      <p>هر ورودی باید شامل شناسه سند، نام و نوع MIME باشد.</p>
+      <p>جزئیات بیشتر اختیاری است. قالب مورد انتظار به شرح زیر است:</p>
       <pre>
         <code>{schema}</code>
       </pre>
-      <p>
-        When using Camunda Tasklist UI, additional document reference attributes are automatically handled. Modifying
-        the document reference may affect the document preview functionality.
+      <p> هنگام استفاده از رابط کاربری Camunda Tasklist، ویژگی‌های مرجع سند اضافی به طور خودکار مدیریت می‌شوند. تغییر
+        مرجع سند ممکن است بر عملکرد پیش‌نمایش سند تأثیر بگذارد.
       </p>
       <p>
-        Learn more in our{' '}
+        برای کسب اطلاعات بیشتر به{' '}
         <a
           href="https://docs.camunda.io/docs/8.7/components/modeler/forms/form-element-library/forms-element-library-document-preview/"
           target="_blank"
           rel="noopener noreferrer">
-          documentation
-        </a>
-        .
+          مستندات
+        </a>{' '}
+        ما مراجعه کنید.
       </p>
     </div>
   );
@@ -79,7 +78,7 @@ function DocumentsDataSource(props) {
     element: field,
     getValue,
     id,
-    label: 'Document reference',
+    label: 'مرجع سند',
     feel: 'required',
     singleLine: true,
     setValue,
@@ -97,6 +96,6 @@ function DocumentsDataSource(props) {
  */
 const validate = (value) => {
   if (typeof value !== 'string' || value.length === 0) {
-    return 'The document data source is required.';
+    return 'مرجع سند الزامی است.';
   }
 };

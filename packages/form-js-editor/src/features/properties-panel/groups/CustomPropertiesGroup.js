@@ -30,11 +30,11 @@ export function CustomPropertiesGroup(field, editField) {
       }
 
       if (typeof value !== 'string' || value.length === 0) {
-        return 'Must not be empty.';
+        return 'نباید خالی باشد.';
       }
 
       if (has(properties, value)) {
-        return 'Must be unique.';
+        return 'باید منحصر به فرد باشد.';
       }
     };
   };
@@ -68,9 +68,9 @@ export function CustomPropertiesGroup(field, editField) {
     component: ListGroup,
     id: 'custom-values',
     items,
-    label: 'Custom properties',
+    label: 'ویژگی های سفارشی',
     tooltip:
-      'Add properties directly to the form schema, useful to configure functionality in custom-built task applications and form renderers.',
+      'ویژگی‌های سفارشی را مستقیماً به فرم اضافه کنید، که برای پیکربندی عملکرد در برنامه‌های کاربردی سفارشی ساخته شده و ارائه‌کننده‌های فرم مفید است.',
   };
 }
 

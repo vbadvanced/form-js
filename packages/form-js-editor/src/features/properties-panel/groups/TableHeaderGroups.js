@@ -19,7 +19,7 @@ export function TableHeaderGroups(field, editField) {
   const groups = [
     {
       id: `${fieldId}-columnsSource`,
-      label: 'Headers source',
+      label: 'منبع ستون‌ها',
       tooltip: TOOLTIP_TEXT,
       component: Group,
       entries: [...HeadersSourceSelectEntry({ field, editField }), ...ColumnsExpressionEntry({ field, editField })],
@@ -31,7 +31,7 @@ export function TableHeaderGroups(field, editField) {
 
     groups.push({
       id,
-      label: 'Header items',
+      label: 'سرستون‌ها',
       component: ListGroup,
       ...StaticColumnsSourceEntry({ field, editField, id }),
     });
@@ -42,7 +42,7 @@ export function TableHeaderGroups(field, editField) {
 
 // helpers //////////
 
-const TOOLTIP_TEXT = `"List of items" defines a constant, predefined set of form options.
+const TOOLTIP_TEXT = `«لیست اقلام» مجموعه‌ای ثابت و از پیش تعریف‌شده از گزینه‌های فرم را تعریف می‌کند.
 
-"Expression" defines options that are populated from a FEEL expression.
+«فرمول» گزینه‌هایی را تعریف می‌کند که از یک فرمول FEEL پر می‌شوند.
 `;

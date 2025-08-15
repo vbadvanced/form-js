@@ -27,7 +27,7 @@ export function getPropertiesPanelHeaderProvider(options = {}) {
     getTypeLabel: (field) => {
       const { type } = field;
       if (type === 'default') {
-        return 'Form';
+        return 'فرم';
       }
       const fieldDefinition = formFields.get(type).config;
       return fieldDefinition.name || fieldDefinition.label || type;

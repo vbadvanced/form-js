@@ -38,13 +38,13 @@ function Condition(props) {
     return editField(field, 'conditional', { hide: value });
   };
 
-  let label = 'Hide if';
-  let description = 'Condition under which the field is hidden';
+  let label = 'پنهان کردن اگر';
+  let description = 'شرایطی که تحت آن فیلد پنهان می‌شود';
 
   // special case for expression fields which do not render
   if (field.type === 'expression') {
-    label = 'Deactivate if';
-    description = 'Condition under which the field is deactivated';
+    label = 'غیرفعال کردن اگر';
+    description = 'شرایطی که در آن فیلد غیرفعال می‌شود';
   }
 
   return FeelEntry({

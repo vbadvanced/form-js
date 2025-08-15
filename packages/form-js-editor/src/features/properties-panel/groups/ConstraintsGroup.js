@@ -9,7 +9,7 @@ export function ConstraintsGroup(field, editField) {
 
   return {
     id: 'constraints',
-    label: 'Constraints',
+    label: 'محدودیت‌ها',
     entries,
   };
 }

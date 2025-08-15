@@ -39,13 +39,13 @@ function Source(props) {
 
   return FeelTemplatingEntry({
     debounce,
-    description: 'Expression or static value (link/data URI)',
+    description: 'فرمول یا مقدار ثابت (link/data URI)',
     element: field,
     feel: 'optional',
     getValue,
     id,
-    label: 'Image source',
-    tooltip: 'Link referring to a hosted image, or use a data URI directly to embed image data into the form.',
+    label: 'منبع تصویر',
+    tooltip: 'پیوندی که به یک تصویر میزبانی‌شده اشاره می‌کند، یا از یک data URI مستقیماً برای جاسازی داده‌های تصویر در فرم استفاده کنید.',
     setValue,
     singleLine: true,
     variables,

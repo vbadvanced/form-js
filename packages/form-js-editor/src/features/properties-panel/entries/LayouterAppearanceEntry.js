@@ -11,11 +11,11 @@ export function LayouterAppearanceEntry(props) {
     simpleSelectEntryFactory({
       id: 'verticalAlignment',
       path: ['verticalAlignment'],
-      label: 'Vertical alignment',
+      label: 'تراز عمودی',
       optionsArray: [
-        { value: 'start', label: 'Top' },
-        { value: 'center', label: 'Center' },
-        { value: 'end', label: 'Bottom' },
+        { value: 'start', label: 'بالا' },
+        { value: 'center', label: 'وسط' },
+        { value: 'end', label: 'پایین' },
       ],
       props,
     }),

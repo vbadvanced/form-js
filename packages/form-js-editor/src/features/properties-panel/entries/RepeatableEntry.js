@@ -15,7 +15,7 @@ export function RepeatableEntry(props) {
     simpleRangeIntegerEntryFactory({
       id: 'defaultRepetitions',
       path: ['defaultRepetitions'],
-      label: 'Default number of items',
+      label: 'تعداد پیش‌فرض موارد',
       min: 1,
       max: 100,
       props,
@@ -23,13 +23,13 @@ export function RepeatableEntry(props) {
     simpleBoolEntryFactory({
       id: 'allowAddRemove',
       path: ['allowAddRemove'],
-      label: 'Allow add/delete items',
+      label: 'اجازه اضافه کردن/حذف موارد',
       props,
     }),
     simpleBoolEntryFactory({
       id: 'disableCollapse',
       path: ['disableCollapse'],
-      label: 'Disable collapse',
+      label: 'جمع کردن غیرفعال باشد',
       props,
     }),
   ];
@@ -38,7 +38,7 @@ export function RepeatableEntry(props) {
     const nonCollapseItemsEntry = simpleRangeIntegerEntryFactory({
       id: 'nonCollapsedItems',
       path: ['nonCollapsedItems'],
-      label: 'Number of non-collapsing items',
+      label: 'تعداد اقلام غیرقابل جمع شدن',
       min: 1,
       defaultValue: 5,
       props,

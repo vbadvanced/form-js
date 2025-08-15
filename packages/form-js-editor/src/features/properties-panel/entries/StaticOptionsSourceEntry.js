@@ -36,13 +36,13 @@ export function StaticOptionsSourceEntry(props) {
       }
 
       if (typeof value !== 'string' || value.length === 0) {
-        return 'Must not be empty.';
+        return 'نباید خالی باشد.';
       }
 
       const isValueAssigned = values.find((entry) => getValue(entry) === value);
 
       if (isValueAssigned) {
-        return 'Must be unique.';
+        return 'باید منحصر به فرد باشد.';
       }
     };
   };
@@ -75,7 +75,7 @@ export function StaticOptionsSourceEntry(props) {
 
 function getIndexedEntry(index, values) {
   const entry = {
-    label: 'Value',
+    label: 'مقدار',
     value: 'value',
   };
 

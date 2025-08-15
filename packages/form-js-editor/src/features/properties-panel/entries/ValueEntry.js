@@ -60,7 +60,7 @@ function Label(props) {
     element: field,
     getValue,
     id,
-    label: 'Label',
+    label: 'عنوان',
     setValue,
     validate,
   });
@@ -94,7 +94,7 @@ function Value(props) {
     element: field,
     getValue,
     id,
-    label: 'Value',
+    label: 'مقدار',
     setValue,
     validate,
   });

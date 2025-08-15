@@ -15,7 +15,7 @@ export function LayoutGroup(field, editField) {
 
   return {
     id: 'layout',
-    label: 'Layout',
+    label: 'چیدمان',
     entries,
   };
 }

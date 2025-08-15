@@ -30,7 +30,7 @@ function OptionsExpression(props) {
 
   const tooltip = (
     <div>
-      The expression may result in an array of simple values or alternatively follow this schema:
+      این عبارت می‌تواند منجر به آرایه‌ای از مقادیر ساده شود یا به طور جایگزین از این طرح پیروی کند:
       <pre>
         <code>{schema}</code>
       </pre>
@@ -43,13 +43,13 @@ function OptionsExpression(props) {
 
   return FeelEntry({
     debounce,
-    description: 'Define an expression to populate the options from.',
+    description: 'یک عبارت برای پر کردن گزینه ها تعریف کنید.',
     tooltip,
     element: field,
     feel: 'required',
     getValue,
     id,
-    label: 'Options expression',
+    label: 'فرمول گزینه‌ها',
     setValue,
     variables,
   });

@@ -4,13 +4,13 @@
 export const PropertiesPanelPlaceholderProvider = {
   getEmpty: () => {
     return {
-      text: 'Select a form field to edit its properties.',
+      text: 'یک فیلد از فرم را برای ویرایش ویژگی‌های آن انتخاب کنید.',
     };
   },
 
   getMultiple: () => {
     return {
-      text: 'Multiple form fields are selected. Select a single form field to edit its properties.',
+      text: 'چندین فیلد انتخاب شده‌اند. یک فیلد منفرد را برای ویرایش ویژگی های آن انتخاب کنید.',
     };
   },
 };

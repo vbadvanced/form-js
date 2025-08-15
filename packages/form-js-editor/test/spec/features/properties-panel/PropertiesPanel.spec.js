@@ -28,7 +28,7 @@ const spy = sinon.spy;
 describe('properties panel', function () {
   let parent, container, propertiesPanel;
 
-  const bootstrapPropertiesPanel = ({ bootstrapExecute = () => {}, ...options }) => {
+  const bootstrapPropertiesPanel = ({ bootstrapExecute = () => { }, ...options }) => {
     return act(() => {
       propertiesPanel = createPropertiesPanel(options);
       bootstrapExecute(propertiesPanel);
@@ -1394,7 +1394,7 @@ describe('properties panel', function () {
             General: ['Field label', 'Field description', 'Key', 'Disabled', 'Read only'],
             Condition: [],
             'Options source': ['Type'],
-            'Options expression': ['Options expression'],
+            'فرمول گزینه‌ها': ['Options expression'],
             Validation: ['Required'],
             'Custom properties': [],
           });
@@ -2583,7 +2583,7 @@ describe('properties panel', function () {
             // then
             expect(editFieldSpy).to.not.have.been.called;
 
-            const error = screen.getByText('Should be a valid number.');
+            const error = screen.getByText('باید یک عدد معتبر باشد');
             expect(error).to.exist;
           });
 
@@ -2724,7 +2724,7 @@ describe('properties panel', function () {
             // then
             expect(editFieldSpy).to.not.have.been.called;
 
-            const error = screen.getByText('Should be greater than zero.');
+            const error = screen.getByText('باید بزرگتر از صفر باشد.');
             expect(error).to.exist;
           });
         });
@@ -2776,7 +2776,7 @@ describe('properties panel', function () {
             // then
             expect(editFieldSpy).to.not.have.been.called;
 
-            const error = screen.getByText('Should be an integer.');
+            const error = screen.getByText('باید یک عدد صحیح باشد.');
             expect(error).to.exist;
           });
         });
@@ -3760,7 +3760,7 @@ describe('properties panel', function () {
 
 function createPropertiesPanel({ services, ...restOptions } = {}, renderFn = render) {
   const options = {
-    editField: () => {},
+    editField: () => { },
     isTemplate: () => false,
     evaluateTemplate: (value) => `Evaluation of "${value}"`,
     valuePaths: {},

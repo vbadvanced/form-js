@@ -61,7 +61,7 @@ function Label(props) {
     element: field,
     getValue,
     id,
-    label: 'Label',
+    label: 'عنوان',
     setValue,
   });
 }
@@ -108,7 +108,7 @@ function Key(props) {
  */
 function validate(value) {
   if (!isString(value) || value.length === 0) {
-    return 'Must not be empty.';
+    return 'نباید خالی باشد.';
   }
 
   return null;

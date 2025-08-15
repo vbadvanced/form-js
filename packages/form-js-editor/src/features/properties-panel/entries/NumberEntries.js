@@ -54,7 +54,7 @@ function NumberDecimalDigits(props) {
 
   return NumberFieldEntry({
     debounce,
-    label: 'Decimal digits',
+    label: 'ارقام اعشاری',
     element: field,
     step: 'any',
     getValue,
@@ -102,22 +102,22 @@ function NumberArrowStep(props) {
       }
 
       if (!isValidNumber(value)) {
-        return 'Should be a valid number.';
+        return 'باید یک عدد معتبر باشد';
       }
 
       if (Big(value).cmp(0) <= 0) {
-        return 'Should be greater than zero.';
+        return 'باید بزرگتر از صفر باشد.';
       }
 
       if (decimalDigitsSet) {
         const minimumValue = Big(`1e-${decimalDigits}`);
 
         if (Big(value).cmp(minimumValue) < 0) {
-          return `Should be at least ${minimumValue.toString()}.`;
+          return `باید حداقل ${minimumValue.toString()} باشد.`;
         }
 
         if (countDecimals(value) > decimalDigits) {
-          return `Should not contain more than ${decimalDigits} decimal digits.`;
+          return `نباید بیش از ${decimalDigits} رقم اعشار داشته باشد.`;
         }
       }
     },
@@ -126,7 +126,7 @@ function NumberArrowStep(props) {
 
   return TextFieldEntry({
     debounce,
-    label: 'Increment',
+    label: 'افزایش',
     element: field,
     getValue,
     id,
@@ -147,10 +147,10 @@ const validateNumberEntries = (value) => {
   }
 
   if (!Number.isInteger(value)) {
-    return 'Should be an integer.';
+    return 'باید یک عدد صحیح باشد.';
   }
 
   if (value < 0) {
-    return 'Should be greater than or equal to zero.';
+    return 'باید بزرگتر یا مساوی صفر باشد.';
   }
 };

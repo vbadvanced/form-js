@@ -5,11 +5,11 @@ import { isEditedFromDefaultFactory } from '../Util';
 
 const OPTIONS = {
   static: {
-    label: 'List of items',
+    label: 'لیست موارد',
     value: 'static',
   },
   expression: {
-    label: 'Expression',
+    label: 'فرمول',
     value: 'expression',
   },
 };
@@ -84,7 +84,7 @@ function HeadersSourceSelect(props) {
 
   return AutoFocusSelectEntry({
     autoFocusEntry: getAutoFocusEntryId(field),
-    label: 'Type',
+    label: 'نوع',
     element: field,
     getOptions: getValuesSourceOptions,
     getValue,

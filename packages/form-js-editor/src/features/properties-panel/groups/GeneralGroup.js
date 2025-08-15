@@ -67,7 +67,7 @@ export function GeneralGroup(field, editField, getService) {
 
   return {
     id: 'general',
-    label: 'General',
+    label: 'عمومی',
     entries,
   };
 }

@@ -24,7 +24,7 @@ export function PaletteEntry(props) {
       type="button"
       class="fjs-palette-field fjs-drag-copy fjs-no-drop"
       data-field-type={type}
-      title={`Create ${getIndefiniteArticle(type)} ${label} element`}
+      title={`ایجاد ${getIndefiniteArticle(type)} عنصر ${label}`}
       onKeyDown={onKeyDown}>
       {Icon ? <Icon class="fjs-palette-field-icon" width="36" height="36" viewBox="0 0 54 54" /> : null}
       <span class="fjs-palette-field-text">{label}</span>
@@ -36,8 +36,8 @@ export function PaletteEntry(props) {
 
 function getIndefiniteArticle(type) {
   if (['image'].includes(type)) {
-    return 'an';
+    return 'یک';
   }
 
-  return 'a';
+  return 'یک';
 }

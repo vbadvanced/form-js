@@ -40,14 +40,14 @@ function VersionTag(props) {
     return editField(field, path, value);
   };
 
-  const tooltip = <div>Version tag by which this form can be referenced.</div>;
+  const tooltip = <div>برچسب نسخه‌ای که می‌توان با آن به این فرم ارجاع داد.</div>;
 
   return TextFieldEntry({
     debounce,
     element: field,
     getValue,
     id,
-    label: 'Version tag',
+    label: 'برچسب نسخه‌',
     setValue,
     tooltip,
   });

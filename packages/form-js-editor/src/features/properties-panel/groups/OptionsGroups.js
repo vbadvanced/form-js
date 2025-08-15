@@ -31,7 +31,7 @@ export function OptionsGroups(field, editField, getService) {
   const groups = [
     {
       id,
-      label: 'Options source',
+      label: 'منبع گزینه‌ها',
       tooltip: getValuesTooltip(),
       component: Group,
       entries: OptionsSourceSelectEntry({ ...context, id }),
@@ -44,7 +44,7 @@ export function OptionsGroups(field, editField, getService) {
     const id = 'dynamicOptions';
     groups.push({
       id,
-      label: 'Dynamic options',
+      label: 'گزینه‌های پویا',
       component: Group,
       entries: InputKeyOptionsSourceEntry({ ...context, id }),
     });
@@ -52,7 +52,7 @@ export function OptionsGroups(field, editField, getService) {
     const id = 'staticOptions';
     groups.push({
       id,
-      label: 'Static options',
+      label: 'گزینه های ثابت',
       component: ListGroup,
       ...StaticOptionsSourceEntry({ ...context, id }),
     });
@@ -60,7 +60,7 @@ export function OptionsGroups(field, editField, getService) {
     const id = 'optionsExpression';
     groups.push({
       id,
-      label: 'Options expression',
+      label: 'فرمول گزینه‌ها',
       component: Group,
       entries: OptionsExpressionEntry({ ...context, id }),
     });
@@ -73,8 +73,8 @@ export function OptionsGroups(field, editField, getService) {
 
 function getValuesTooltip() {
   return (
-    '"Static" defines a constant, predefined set of form options.\n\n' +
-    '"Input data" defines options that are populated dynamically, adjusting based on variable data for flexible responses to different conditions or inputs.\n\n' +
-    '"Expression" defines options that are populated from a FEEL expression.'
+    '"ایستا" مجموعه‌ای ثابت و از پیش تعریف‌شده از گزینه‌های فرم را تعریف می‌کند.\n\n' +
+    '"داده‌های ورودی" گزینه‌هایی را تعریف می‌کند که به صورت پویا پر می‌شوند و بر اساس داده‌های متغیر برای پاسخ‌های انعطاف‌پذیر به شرایط یا ورودی‌های مختلف تنظیم می‌شوند.\n\n' +
+    '"فرمول" گزینه‌هایی را تعریف می‌کند که از یک فرمول FEEL پر می‌شوند.'
   );
 }

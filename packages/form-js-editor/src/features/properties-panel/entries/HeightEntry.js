@@ -46,7 +46,7 @@ function Height(props) {
   return NumberFieldEntry({
     debounce,
     description,
-    label: 'Height',
+    label: 'ارتفاع',
     element: field,
     id,
     getValue,
@@ -63,14 +63,14 @@ function Height(props) {
  */
 const validate = (value) => {
   if (typeof value !== 'number') {
-    return 'A number is required.';
+    return 'یک عدد الزامی است.';
   }
 
   if (!Number.isInteger(value)) {
-    return 'Should be an integer.';
+    return 'باید یک عدد صحیح باشد.';
   }
 
   if (value < 1) {
-    return 'Should be greater than zero.';
+    return 'باید بزرگتر از صفر باشد.';
   }
 };

@@ -28,7 +28,7 @@ function InputValuesKey(props) {
 
   const tooltip = (
     <div>
-      The input property may be an array of simple values or alternatively follow this schema:
+      ویژگی ورودی ممکن است آرایه‌ای از مقادیر ساده باشد یا از این طرح پیروی کند:
       <pre>
         <code>{schema}</code>
       </pre>
@@ -47,12 +47,12 @@ function InputValuesKey(props) {
 
   return TextFieldEntry({
     debounce,
-    description: 'Define which input property to populate the values from',
+    description: 'مشخص می کند که از کدام خصوصیت ورودی مقادیر را پر کند',
     tooltip,
     element: field,
     getValue,
     id,
-    label: 'Input values key',
+    label: 'کلید مقادیر ورودی',
     setValue,
     validate,
   });
@@ -66,11 +66,11 @@ function InputValuesKey(props) {
  */
 const validate = (value) => {
   if (typeof value !== 'string' || value.length === 0) {
-    return 'Must not be empty.';
+    return 'نباید خالی باشد.';
   }
 
   if (/\s/.test(value)) {
-    return 'Must not contain spaces.';
+    return 'نباید شامل فاصله (space) باشد.';
   }
 
   return null;

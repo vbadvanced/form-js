@@ -25,7 +25,7 @@ export function Modal(props) {
         <div class="fjs-pgl-modal-body">{props.children}</div>
         <div class="fjs-pgl-modal-footer">
           <button type="button" class="fjs-pgl-button fjs-pgl-button-default" onClick={props.onClose}>
-            Close
+            بستن
           </button>
         </div>
       </div>

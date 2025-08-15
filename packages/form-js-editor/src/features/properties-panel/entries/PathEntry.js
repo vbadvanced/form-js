@@ -54,7 +54,7 @@ function Path(props) {
   const validate = useCallback(
     (value) => {
       if (!value && isRepeating) {
-        return 'Must not be empty';
+        return 'نباید خالی باشد';
       }
 
       // Early return for empty value in non-repeating cases or if the field path hasn't changed
@@ -65,19 +65,19 @@ function Path(props) {
       // Validate dot-separated path format
       if (!isValidDotPath(value)) {
         const msg = isRepeating
-          ? 'Must be a variable or a dot-separated path'
-          : 'Must be empty, a variable or a dot-separated path';
+          ? 'باید یک متغیر یا یک مسیر جدا شده با نقطه باشد'
+          : 'باید خالی، یک متغیر یا یک مسیر جدا شده با نقطه باشد';
         return msg;
       }
 
       // Check for integer segments in the path
       if (hasIntegerPathSegment(value)) {
-        return 'Must not contain numerical path segments.';
+        return 'نباید شامل بخش‌های مسیر عددی باشد.';
       }
 
       // Check for special prohibited paths
       if (isProhibitedPath(value)) {
-        return 'Must not be a prohibited path.';
+        return 'نباید یک مسیر ممنوعه باشد.';
       }
 
       // Check for path collisions
@@ -93,7 +93,7 @@ function Path(props) {
       });
 
       if (!canClaim) {
-        return 'Must not cause two binding paths to collide';
+        return 'نباید باعث برخورد دو مسیر اتصال شود';
       }
 
       // If all checks pass
@@ -103,16 +103,16 @@ function Path(props) {
   );
 
   const tooltip = isRepeating
-    ? 'Routes the children of this component into a form variable, may be left empty to route at the root level.'
-    : 'Routes the children of this component into a form variable.';
+    ? 'فرزندان این کامپوننت را به یک متغیر فرم هدایت می‌کند، می‌تواند برای مسیریابی در سطح ریشه خالی بماند.'
+    : 'فرزندان این کامپوننت را به یک متغیر فرم هدایت می‌کند.';
 
   return TextFieldEntry({
     debounce,
-    description: 'Where the child variables of this component are pathed to.',
+    description: 'جایی که متغیرهای فرزند این کامپوننت به آن مسیردهی می‌شوند.',
     element: field,
     getValue,
     id,
-    label: 'Path',
+    label: 'مسیر',
     tooltip,
     setValue,
     validate,

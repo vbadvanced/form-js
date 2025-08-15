@@ -43,7 +43,7 @@ function Accept(props) {
     element: field,
     getValue,
     id,
-    label: 'Supported file formats',
+    label: 'فرمت‌های فایل پشتیبانی‌شده',
     singleLine: true,
     setValue,
     variables,
@@ -55,12 +55,13 @@ function Accept(props) {
 
 const description = (
   <>
-    A comma-separated list of{' '}
+    فهرستی از{' '}
     <a
       href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/file#unique_file_type_specifiers"
       target="_blank"
       rel="noreferrer">
-      file type specifiers
-    </a>
+      مشخص‌کننده‌های نوع فایل
+    </a>{' '}
+    که با کاما از هم جدا شده‌اند
   </>
 );

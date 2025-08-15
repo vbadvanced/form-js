@@ -44,7 +44,7 @@ function Content(props) {
     element: field,
     getValue,
     id,
-    label: 'Content',
+    label: 'محتوی',
     hostLanguage: 'html',
     validate,
     setValue,
@@ -56,12 +56,12 @@ function Content(props) {
 
 const description = (
   <>
-    Supports HTML, styling, and templating. Styles are automatically scoped to the HTML component.{' '}
+    از HTML، استایل‌بندی و قالب‌بندی پشتیبانی می‌کند. استایل‌ها به طور خودکار به کامپوننت HTML محدود می‌شوند.{' '}
     <a
       href="https://docs.camunda.io/docs/components/modeler/forms/form-element-library/forms-element-library-html/"
       target="_blank"
       rel="noreferrer">
-      Learn more
+      بیشتر بدانید
     </a>
   </>
 );

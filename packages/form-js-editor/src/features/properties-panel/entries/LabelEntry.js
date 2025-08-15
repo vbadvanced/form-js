@@ -106,7 +106,7 @@ function DateLabel(props) {
     element: field,
     getValue,
     id,
-    label: 'Date label',
+    label: 'برچسب تاریخ',
     singleLine: true,
     setValue,
     variables,
@@ -135,7 +135,7 @@ function TimeLabel(props) {
     element: field,
     getValue,
     id,
-    label: 'Time label',
+    label: 'برچسب زمان',
     singleLine: true,
     setValue,
     variables,
@@ -152,13 +152,13 @@ function getLabelText(type) {
   switch (type) {
     case 'group':
     case 'dynamiclist':
-      return 'Group label';
+      return 'عنوان گروه';
     case 'table':
-      return 'Table label';
+      return 'عنوان جدول';
     case 'iframe':
     case 'documentPreview':
-      return 'Title';
+      return 'عنوان';
     default:
-      return 'Field label';
+      return 'عنوان فیلد';
   }
 }

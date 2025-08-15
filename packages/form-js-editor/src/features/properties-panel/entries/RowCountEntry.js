@@ -45,7 +45,7 @@ function RowCount(props) {
 
   return NumberFieldEntry({
     debounce,
-    label: 'Number of rows per page',
+    label: 'تعداد ردیف‌ها در هر صفحه',
     element: field,
     id,
     getValue,
@@ -66,15 +66,15 @@ const validate = (value) => {
   }
 
   if (!isNumber(value)) {
-    return 'Must be number';
+    return 'باید عدد باشد';
   }
 
   if (!Number.isInteger(value)) {
-    return 'Should be an integer.';
+    return 'باید یک عدد صحیح باشد.';
   }
 
   if (value < 1) {
-    return 'Should be greater than zero.';
+    return 'باید بزرگتر از صفر باشد.';
   }
 
   return null;

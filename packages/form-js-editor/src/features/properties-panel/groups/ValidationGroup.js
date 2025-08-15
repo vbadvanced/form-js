@@ -17,15 +17,15 @@ import { INPUTS } from '../Util';
 const VALIDATION_TYPE_OPTIONS = {
   custom: {
     value: '',
-    label: 'Custom',
+    label: 'سفارشی',
   },
   email: {
     value: 'email',
-    label: 'Email',
+    label: 'ایمیل',
   },
   phone: {
     value: 'phone',
-    label: 'Phone',
+    label: 'تلفن',
   },
 };
 
@@ -105,7 +105,7 @@ export function ValidationGroup(field, editField) {
     isDefaultVisible: (field) => INPUTS.includes(field.type) && type === 'textfield' && isCustomValidation,
   });
 
-   entries.push({
+  entries.push({
     id: 'patternErrorMessage',
     component: PatternErrorMessage,
     getValue,
@@ -141,7 +141,7 @@ export function ValidationGroup(field, editField) {
 
   return {
     id: 'validation',
-    label: 'Validation',
+    label: 'اعتبارسنجی',
     entries,
   };
 }
@@ -153,7 +153,7 @@ function Required(props) {
     element: field,
     getValue: getValue('required'),
     id,
-    label: 'Required',
+    label: 'الزامی است',
     setValue: onChange('required'),
   });
 }
@@ -171,7 +171,7 @@ function MinLength(props) {
     feel: 'optional',
     getValue: getValue('minLength'),
     id,
-    label: 'Minimum length',
+    label: 'حداقل طول',
     min: 0,
     setValue: onChange('minLength'),
     variables,
@@ -191,7 +191,7 @@ function MaxLength(props) {
     feel: 'optional',
     getValue: getValue('maxLength'),
     id,
-    label: 'Maximum length',
+    label: 'حداکثر طول',
     min: 0,
     setValue: onChange('maxLength'),
     variables,
@@ -208,7 +208,7 @@ function Pattern(props) {
     element: field,
     getValue: getValue('pattern'),
     id,
-    label: 'Custom regular expression',
+    label: 'عبارت منظم (REGEX) سفارشی',
     setValue: onChange('pattern'),
   });
 }
@@ -223,8 +223,8 @@ function PatternErrorMessage(props) {
     element: field,
     getValue: getValue('patternErrorMessage'),
     id,
-    label: 'Custom error message',
-    tooltip: 'The error message to display when the input does not match the regular expression.',
+    label: 'پیغام خطای سفارشی',
+    tooltip: 'پیام خطایی که هنگام عدم تطابق ورودی با عبارت منظم نمایش داده می‌شود.',
     setValue: onChange('patternErrorMessage'),
   });
 }
@@ -241,7 +241,7 @@ function Min(props) {
     element: field,
     feel: 'optional',
     id,
-    label: 'Minimum',
+    label: 'حداقل',
     step: 'any',
     getValue: getValue('min'),
     setValue: onChange('min'),
@@ -261,7 +261,7 @@ function Max(props) {
     element: field,
     feel: 'optional',
     id,
-    label: 'Maximum',
+    label: 'حداکثر',
     step: 'any',
     getValue: getValue('max'),
     setValue: onChange('max'),
@@ -283,12 +283,12 @@ function ValidationType(props) {
     element: field,
     getValue: getValue('validationType'),
     id,
-    label: 'Validation pattern',
+    label: 'الگوی اعتبارسنجی',
     setValue,
     getOptions: () => Object.values(VALIDATION_TYPE_OPTIONS),
     tooltip:
       getValue('validationType')() === VALIDATION_TYPE_OPTIONS.phone.value
-        ? 'The built-in phone validation pattern is based on the E.164 standard with no spaces. Ex: +491234567890'
+        ? 'الگوی اعتبارسنجی تلفن بر اساس استاندارد E.164 و بدون فاصله است. مثال: +491234567890'
         : undefined,
   });
 }

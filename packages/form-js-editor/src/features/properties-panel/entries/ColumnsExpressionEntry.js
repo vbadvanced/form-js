@@ -50,7 +50,7 @@ function ColumnsExpression(props) {
 
   const tooltip = (
     <div>
-      The expression may result in an array of simple values or alternatively follow this schema:
+      این عبارت می‌تواند منجر به آرایه‌ای از مقادیر ساده شود یا به طور جایگزین از این طرح پیروی کند:
       <pre>
         <code>{schema}</code>
       </pre>
@@ -59,12 +59,12 @@ function ColumnsExpression(props) {
 
   return FeelTemplatingEntry({
     debounce,
-    description: 'Specify an expression to populate column items',
+    description: 'یک فرمول برای پر کردن آیتم‌های ستون مشخص کنید',
     element: field,
     feel: 'required',
     getValue,
     id,
-    label: 'Expression',
+    label: 'فرمول',
     tooltip,
     setValue,
     singleLine: true,
@@ -81,7 +81,7 @@ function ColumnsExpression(props) {
  */
 const validate = (value) => {
   if (!isString(value) || value.length === 0 || value === '=') {
-    return 'Must not be empty.';
+    return 'نباید خالی باشد.';
   }
 
   return null;

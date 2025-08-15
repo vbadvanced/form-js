@@ -45,8 +45,8 @@ function SerializeToString(props) {
     element: field,
     getValue,
     id,
-    label: 'Output as string',
-    description: 'Allows arbitrary precision values',
+    label: 'خروجی به صورت رشته',
+    description: 'مقادیر دقت دلخواه را مجاز می‌داند',
     setValue,
   });
 }

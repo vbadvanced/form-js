@@ -45,7 +45,7 @@ function Description(props) {
     element: field,
     getValue,
     id,
-    label: 'Field description',
+    label: 'توضیحات فیلد',
     singleLine: true,
     setValue,
     variables,

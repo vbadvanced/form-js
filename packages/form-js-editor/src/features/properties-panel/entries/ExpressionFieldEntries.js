@@ -41,12 +41,12 @@ function ExpressionFieldExpression(props) {
 
   return FeelEntry({
     debounce,
-    description: 'Define an expression to calculate the value of this field',
+    description: 'یک عبارت برای محاسبه مقدار این فیلد تعریف کنید',
     element: field,
     feel: 'required',
     getValue,
     id,
-    label: 'Target value',
+    label: 'مقدار هدف',
     setValue,
     variables,
   });
@@ -62,13 +62,13 @@ function ExpressionFieldComputeOn(props) {
   };
 
   const getOptions = () => [
-    { value: 'change', label: 'Value changes' },
-    { value: 'presubmit', label: 'Form submission' },
+    { value: 'change', label: 'تغییرات مقادیر' },
+    { value: 'presubmit', label: 'ارسال فرم' },
   ];
 
   return SelectEntry({
     id,
-    label: 'Compute on',
+    label: 'زمان محاسبه مجدد',
     getValue,
     setValue,
     getOptions,

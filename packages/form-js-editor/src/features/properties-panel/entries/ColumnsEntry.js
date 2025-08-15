@@ -57,7 +57,7 @@ function Columns(props) {
   const getOptions = () => {
     return [
       {
-        label: 'Auto',
+        label: 'اتوماتیک',
         value: AUTO_OPTION_VALUE,
       },
 
@@ -73,7 +73,7 @@ function Columns(props) {
     debounce,
     element: field,
     id,
-    label: 'Columns',
+    label: 'سرستون‌ها',
     getOptions,
     getValue,
     setValue,

@@ -40,7 +40,7 @@ export function DefaultValueEntry(props) {
     editField,
     field,
     id: 'defaultValue',
-    label: 'Default value',
+    label: 'مقدار پیش‌فرض',
   };
 
   entries.push({
@@ -93,11 +93,11 @@ function DefaultValueCheckbox(props) {
   const getOptions = () => {
     return [
       {
-        label: 'Checked',
+        label: 'فعال',
         value: 'true',
       },
       {
-        label: 'Not checked',
+        label: 'غیرفعال',
         value: 'false',
       },
     ];
@@ -162,10 +162,10 @@ function DefaultValueNumber(props) {
       }
 
       if (!isValidNumber(value)) {
-        return 'Should be a valid number';
+        return 'باید یک عدد معتبر باشد';
       }
       if (decimalDigitsSet && countDecimals(value) > decimalDigits) {
-        return `Should not contain more than ${decimalDigits} decimal digits`;
+        return `نباید بیش از ${decimalDigits} رقم اعشار داشته باشد`;
       }
     },
     [decimalDigitsSet, decimalDigits],

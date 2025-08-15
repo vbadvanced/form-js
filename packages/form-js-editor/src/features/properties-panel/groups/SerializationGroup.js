@@ -9,7 +9,7 @@ export function SerializationGroup(field, editField) {
 
   return {
     id: 'serialization',
-    label: 'Serialization',
+    label: 'خروجی',
     entries,
   };
 }

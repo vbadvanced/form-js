@@ -41,9 +41,9 @@ export function EmbedModal(props) {
   });
 
   return (
-    <Modal name="Embed form" onClose={props.onClose}>
+    <Modal name="فرم را جاسازی کنید" onClose={props.onClose}>
       <p>
-        Use the following HTML snippet to embed your form with <a href="https://github.com/bpmn-io/form-js">form-js</a>:
+        برای جاسازی فرم خود با <a href="https://github.com/bpmn-io/form-js">form-js</a> از قطعه کد HTML زیر استفاده کنید:
       </p>
 
       <textarea spellCheck="false" ref={fieldRef}>

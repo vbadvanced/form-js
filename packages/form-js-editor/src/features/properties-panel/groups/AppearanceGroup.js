@@ -14,7 +14,7 @@ export function AppearanceGroup(field, editField, getService) {
 
   return {
     id: 'appearance',
-    label: 'Appearance',
+    label: 'شکل ظاهری',
     entries,
   };
 }

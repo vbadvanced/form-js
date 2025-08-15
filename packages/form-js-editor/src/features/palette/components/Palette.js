@@ -21,23 +21,23 @@ import { PaletteEntry } from './PaletteEntry';
 
 export const PALETTE_GROUPS = [
   {
-    label: 'Input',
+    label: 'ورودی',
     id: 'basic-input',
   },
   {
-    label: 'Selection',
+    label: 'انتخابی',
     id: 'selection',
   },
   {
-    label: 'Presentation',
+    label: 'نمایشی',
     id: 'presentation',
   },
   {
-    label: 'Containers',
+    label: 'کانتینر',
     id: 'container',
   },
   {
-    label: 'Action',
+    label: 'عملکرد',
     id: 'action',
   },
 ];
@@ -100,7 +100,7 @@ export function Palette(props) {
   return (
     <div class="fjs-palette">
       <div class="fjs-palette-header" title="Components">
-        Components
+        عناصر فرم
       </div>
       <div class="fjs-palette-search-container">
         <span class="fjs-palette-search-icon">
@@ -110,12 +110,12 @@ export function Palette(props) {
           class="fjs-palette-search"
           ref={inputRef}
           type="text"
-          placeholder="Search components"
+          placeholder="جستجوی عناصر"
           value={searchTerm}
           onInput={handleInput}
         />
         {searchTerm && (
-          <button type="button" title="Clear content" class="fjs-palette-search-clear" onClick={handleClear}>
+          <button type="button" title="حذف جستجو" class="fjs-palette-search-clear" onClick={handleClear}>
             <CloseIcon></CloseIcon>
           </button>
         )}
@@ -131,7 +131,7 @@ export function Palette(props) {
             </div>
           </div>
         ))}
-        {groups.length == 0 && <div class="fjs-palette-no-entries">No components found.</div>}
+        {groups.length == 0 && <div class="fjs-palette-no-entries">هیچ موردی یافت نشد.</div>}
       </div>
       <div class="fjs-palette-footer">
         {/* @ts-ignore */}

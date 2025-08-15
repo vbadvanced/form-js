@@ -11,7 +11,7 @@ export function ConditionGroup(field, editField) {
 
   return {
     id: 'condition',
-    label: 'Condition',
+    label: 'شرایط',
     entries,
   };
 }

@@ -202,7 +202,7 @@ export function Numberfield(props) {
             <button
               type="button"
               class="fjs-number-arrow-up"
-              aria-label="Increment"
+              aria-label="افزایش"
               onClick={() => increment()}
               tabIndex={-1}>
               <AngelUpIcon />

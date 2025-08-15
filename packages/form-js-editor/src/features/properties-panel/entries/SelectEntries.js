@@ -5,7 +5,7 @@ export function SelectEntries(props) {
     simpleBoolEntryFactory({
       id: 'searchable',
       path: ['searchable'],
-      label: 'Searchable',
+      label: 'قابل جستجو',
       props,
       isDefaultVisible: (field) => field.type === 'select',
     }),

@@ -45,7 +45,7 @@ function Url(props) {
     feel: 'optional',
     getValue,
     id,
-    label: 'URL',
+    label: 'آدرس URL',
     setValue,
     singleLine: true,
     tooltip: getTooltip(),
@@ -60,19 +60,18 @@ function getTooltip() {
   return (
     <>
       <p>
-        Enter a HTTPS URL to a source or populate it dynamically via a template or an expression (e.g., to pass a value
-        from the variable).
+        یک آدرس اینترنتی HTTPS به یک منبع وارد کنید یا آن را به صورت پویا از طریق یک الگو یا یک فرمول (مثلاً برای ارسال یک مقدار از متغیر) پر کنید.
       </p>
-      <p>Please make sure that the URL is safe as it might impose security risks.</p>
+      <p>لطفاً مطمئن شوید که آدرس اینترنتی ایمن است زیرا ممکن است خطرات امنیتی ایجاد کند.</p>
       <p>
-        Not all external sources can be displayed in the iFrame. Read more about it in the{' '}
+        همه منابع خارجی را نمی‌توان در iFrame نمایش داد. برای اطلاعات بیشتر در مورد آن به{' '}
         <a
           target="_blank"
           href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options"
           rel="noreferrer">
-          X-FRAME-OPTIONS documentation
-        </a>
-        .
+          مستندات X-FRAME-OPTIONS
+        </a>{' '}
+        مراجعه کنید.
       </p>
     </>
   );
@@ -88,6 +87,6 @@ const validate = (value) => {
   }
 
   if (!HTTPS_PATTERN.test(value)) {
-    return 'For security reasons the URL must start with "https".';
+    return 'به دلایل امنیتی، آدرس اینترنتی (URL) باید با "https" شروع شود.';
   }
 };

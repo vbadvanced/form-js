@@ -38,7 +38,7 @@ function MaxHeight(props) {
 
   return NumberFieldEntry({
     debounce,
-    label: 'Max height of preview container',
+    label: 'حداکثر ارتفاع کانتینر پیش‌نمایش',
     element: field,
     id,
     getValue,
@@ -60,16 +60,16 @@ const validate = (value) => {
   }
 
   if (typeof value === 'string') {
-    return 'Value must be a number.';
+    return 'مقدار باید یک عدد باشد.';
   }
 
   if (!Number.isInteger(value)) {
-    return 'Should be an integer.';
+    return 'باید یک عدد صحیح باشد.';
   }
 
   if (value < 1) {
-    return 'Should be greater than zero.';
+    return 'باید بزرگتر از صفر باشد.';
   }
 };
 
-const description = <>Documents with height that exceeds the defined value will be vertically scrollable</>;
+const description = <>اسنادی که ارتفاع آنها از مقدار تعریف شده بیشتر باشد، قابلیت پیمایش عمودی خواهند داشت.</>;

@@ -44,7 +44,7 @@ function AltText(props) {
     feel: 'optional',
     getValue,
     id,
-    label: 'Alternative text',
+    label: 'متن جایگزین',
     tooltip: 'Descriptive text for screen reader accessibility.',
     setValue,
     singleLine: true,

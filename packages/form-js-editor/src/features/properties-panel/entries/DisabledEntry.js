@@ -38,9 +38,9 @@ function Disabled(props) {
     element: field,
     getValue,
     id,
-    label: 'Disabled',
+    label: 'غیرفعال',
     tooltip:
-      'Disable this field when it should not be interactive for end-users. Its data will not be submitted. This setting takes precedence over read-only.',
+      'این فیلد را زمانی که نباید برای کاربران نهایی تعاملی باشد، غیرفعال کنید. داده‌های آن ارسال نخواهند شد. این تنظیم بر حالت فقط خواندنی اولویت دارد.',
     inline: true,
     setValue,
   });

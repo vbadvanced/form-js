@@ -44,7 +44,7 @@ function ContextPad(props) {
 function EmptyGroup() {
   return (
     <div class="fjs-empty-component">
-      <span class="fjs-empty-component-text">Drag and drop components here.</span>
+      <span class="fjs-empty-component-text">عناصر فرم را اینجا بکشید و رها کنید.</span>
     </div>
   );
 }
@@ -54,9 +54,9 @@ function EmptyForm() {
     <div class="fjs-empty-editor">
       <div class="fjs-empty-editor-card">
         <EmptyFormIcon />
-        <h2>Build your form</h2>
-        <span>Drag and drop components here to start designing.</span>
-        <span>Use the preview window to test your form.</span>
+        <h2>فرم خود را بسازید</h2>
+        <span>برای شروع طراحی، عناصر فرم را اینجا بکشید و رها کنید.</span>
+        <span>از پنجره پیش‌نمایش برای آزمایش فرم خود استفاده کنید.</span>
       </div>
     </div>
   );
@@ -458,9 +458,9 @@ export function FormEditor() {
     [ariaLabel, formEditor, injector, schema],
   );
 
-  const onSubmit = useCallback(() => {}, []);
+  const onSubmit = useCallback(() => { }, []);
 
-  const onReset = useCallback(() => {}, []);
+  const onReset = useCallback(() => { }, []);
 
   // attach default properties panel
   const hasDefaultPropertiesPanel = defaultPropertiesPanel(propertiesPanelConfig);

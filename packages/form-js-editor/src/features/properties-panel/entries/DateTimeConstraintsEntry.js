@@ -60,7 +60,7 @@ function DisallowPassedDates(props) {
     element: field,
     getValue,
     id,
-    label: 'Disallow past dates',
+    label: 'تاریخ‌های گذشته غیرمجاز باشد',
     setValue,
   });
 }
@@ -82,7 +82,7 @@ function TimeIntervalSelect(props) {
   };
 
   return SelectEntry({
-    label: 'Time interval',
+    label: 'بازه زمانی',
     element: field,
     getOptions: getTimeIntervals,
     getValue,

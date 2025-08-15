@@ -19,7 +19,7 @@ export function SecurityAttributesGroup(field, editField) {
 
   return {
     id: 'securityAttributes',
-    label: 'Security attributes',
+    label: 'ویژگی‌های امنیتی',
     entries,
     tooltip: getTooltip(),
   };
@@ -51,8 +51,7 @@ function createEntries(props) {
 const Advisory = (props) => {
   return (
     <div class="bio-properties-panel-description fjs-properties-panel-detached-description">
-      These options can incur security risks, especially if used in combination with dynamic links. Ensure that you are
-      aware of them, that you trust the source url and only enable what your use case requires.
+      این گزینه‌ها می‌توانند خطرات امنیتی ایجاد کنند، به خصوص اگر در ترکیب با لینک‌های پویا استفاده شوند. مطمئن شوید که از آنها آگاه هستید، به آدرس اینترنتی منبع اعتماد دارید و فقط مواردی را که مورد استفاده شما هست را فعال می‌کنید.
     </div>
   );
 };
@@ -63,11 +62,12 @@ function getTooltip() {
   return (
     <>
       <p>
-        Allow the iframe to access more functionality of your browser, details regarding the various options can be
-        found in the{' '}
+        به iframe اجازه دهید به عملکردهای بیشتری از مرورگر شما دسترسی داشته باشد، جزئیات مربوط به گزینه‌های مختلف
+        را می‌توانید در{' '}
         <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe" rel="noreferrer">
-          MDN iFrame documentation.
+          مستندات MDN iFrame
         </a>
+        بیابید.
       </p>
     </>
   );

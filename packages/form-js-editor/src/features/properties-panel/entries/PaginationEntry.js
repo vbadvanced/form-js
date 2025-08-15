@@ -40,7 +40,7 @@ function Pagination(props) {
     element: field,
     getValue,
     id,
-    label: 'Pagination',
+    label: 'صفحه بندی',
     inline: true,
     setValue,
   });

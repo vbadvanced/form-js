@@ -58,13 +58,13 @@ export function PlaygroundRoot(config) {
   // initialize and link the editors
   useEffect(() => {
     const inputDataEditor = (inputDataRef.current = new JSONEditor({
-      contentAttributes: { 'aria-label': 'Form Input', tabIndex: 0 },
+      contentAttributes: { 'aria-label': 'متغیرهای ورودی', tabIndex: 0 },
       placeholder: createDataEditorPlaceholder(),
     }));
 
     const outputDataEditor = (outputDataRef.current = new JSONEditor({
       readonly: true,
-      contentAttributes: { 'aria-label': 'Form Output', tabIndex: 0 },
+      contentAttributes: { 'aria-label': 'خروجی فرم', tabIndex: 0 },
     }));
 
     const formViewer = (formViewerRef.current = new Form({
@@ -72,7 +72,7 @@ export function PlaygroundRoot(config) {
       additionalModules: [...(additionalModules || []), ...(viewerAdditionalModules || [])],
       properties: {
         ...(viewerProperties || {}),
-        ariaLabel: 'Form Preview',
+        ariaLabel: 'پیش‌نمایش فرم',
       },
     }));
 
@@ -242,17 +242,17 @@ export function PlaygroundRoot(config) {
   }, []);
 
   return (
-    <div class={classNames('fjs-container', 'fjs-pgl-root')}>
+    <div class={classNames('fjs-container', 'fjs-pgl-root')} dir="rtl">
       <div class="fjs-pgl-modals">
         {showEmbed ? <EmbedModal schema={schema} data={data} onClose={hideEmbedModal} /> : null}
       </div>
       <div class="fjs-pgl-palette-container" ref={paletteContainerRef} />
       <div class="fjs-pgl-main">
-        <Section name="Form Definition">
+        <Section name="ویرایش فرم">
           {displayActions && (
             <Section.HeaderItem>
               <button type="button" class="fjs-pgl-button" title="Download form definition" onClick={handleDownload}>
-                Download
+                دانلود
               </button>
             </Section.HeaderItem>
           )}
@@ -260,20 +260,20 @@ export function PlaygroundRoot(config) {
           {displayActions && (
             <Section.HeaderItem>
               <button type="button" class="fjs-pgl-button" onClick={showEmbedModal}>
-                Embed
+                جاسازی
               </button>
             </Section.HeaderItem>
           )}
 
           <div ref={editorContainerRef} class="fjs-pgl-form-container"></div>
         </Section>
-        <Section name="Form Preview">
+        <Section name="پیش‌نمایش فرم">
           <div ref={viewerContainerRef} class="fjs-pgl-form-container"></div>
         </Section>
-        <Section name="Form Input">
+        <Section name="متغیرهای ورودی">
           <div ref={inputDataContainerRef} class="fjs-pgl-text-container"></div>
         </Section>
-        <Section name="Form Output">
+        <Section name="خروجی فرم">
           <div ref={outputDataContainerRef} class="fjs-pgl-text-container"></div>
         </Section>
       </div>
@@ -292,8 +292,8 @@ function createDataEditorPlaceholder() {
   const element = document.createElement('p');
 
   element.innerHTML =
-    'Use this panel to simulate the form input, such as process variables.\nThis helps to test the form by populating the preview.\n\n' +
-    'Follow the JSON format like this:\n\n' +
+    'از این پنل برای شبیه‌سازی ورودی فرم، مانند متغیرهای فرآیند، استفاده کنید.\nاین کار به آزمایش فرم با پر کردن فیلدهای پیش‌نمایش کمک می‌کند.\n\n' +
+    'فرمت JSON را به این صورت دنبال در نظر بگیرید:\n\n' +
     '{\n  "variable": "value"\n}';
 
   return element;

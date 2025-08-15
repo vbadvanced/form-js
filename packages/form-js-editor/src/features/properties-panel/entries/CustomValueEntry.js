@@ -61,7 +61,7 @@ function Key(props) {
     element: field,
     getValue,
     id,
-    label: 'Key',
+    label: 'مقدار',
     setValue,
     validate,
   });
@@ -89,7 +89,7 @@ function Value(props) {
     element: field,
     getValue,
     id,
-    label: 'Value',
+    label: 'عنوان',
     setValue,
     validate: validateFactory(getValue()),
   });

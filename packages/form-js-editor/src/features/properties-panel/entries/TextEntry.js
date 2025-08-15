@@ -48,7 +48,7 @@ function Text(props) {
     element: field,
     getValue,
     id,
-    label: 'Text',
+    label: 'متن',
     hostLanguage: 'markdown',
     setValue,
     variables,
@@ -57,12 +57,12 @@ function Text(props) {
 
 const description = (
   <>
-    Supports markdown and templating.{' '}
+    از markdown و قالب‌بندی پشتیبانی می‌کند.{' '}
     <a
       href="https://docs.camunda.io/docs/components/modeler/forms/form-element-library/forms-element-library-text/"
       target="_blank"
       rel="noreferrer">
-      Learn more
+      بیشتر بدانید
     </a>
   </>
 );

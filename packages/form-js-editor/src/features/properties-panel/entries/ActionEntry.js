@@ -34,11 +34,11 @@ function Action(props) {
 
   const getOptions = () => [
     {
-      label: 'Submit',
+      label: 'ارسال',
       value: 'submit',
     },
     {
-      label: 'Reset',
+      label: 'تنظیم مجدد',
       value: 'reset',
     },
   ];
@@ -48,7 +48,7 @@ function Action(props) {
     getOptions,
     getValue,
     id,
-    label: 'Action',
+    label: 'عملکرد',
     setValue,
   });
 }

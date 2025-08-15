@@ -45,14 +45,14 @@ function Source(props) {
 
   return FeelTemplatingEntry({
     debounce,
-    description: 'Specify the source from which to populate the table',
+    description: 'منبعی را که جدول از آن پر می‌شود، مشخص کنید',
     element: field,
     feel: 'required',
     getValue,
     id,
-    label: 'Data source',
+    label: 'منبع داده‌ها',
     tooltip:
-      'Enter a form input variable that contains the data for the table or define an expression to populate the data dynamically.',
+      'یک متغیر ورودی فرم وارد کنید که شامل داده‌های جدول باشد یا فرمولی را برای پر کردن پویای داده‌ها تعریف کنید.',
     setValue,
     singleLine: true,
     variables,
@@ -68,7 +68,7 @@ function Source(props) {
  */
 const validate = (value) => {
   if (!isString(value) || value.length === 0) {
-    return 'Must not be empty.';
+    return 'نباید خالی باشد.';
   }
 
   if (value.startsWith('=')) {
@@ -76,11 +76,11 @@ const validate = (value) => {
   }
 
   if (!isValidDotPath(value)) {
-    return 'Must be a variable or a dot separated path.';
+    return 'باید یک متغیر یا مسیری باشد که با نقطه از هم جدا شده است.';
   }
 
   if (hasIntegerPathSegment(value)) {
-    return 'Must not contain numerical path segments.';
+    return 'نباید شامل بخش‌های مسیر عددی باشد.';
   }
 
   return null;

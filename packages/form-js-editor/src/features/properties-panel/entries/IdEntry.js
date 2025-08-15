@@ -45,13 +45,13 @@ function Id(props) {
   const validate = useCallback(
     (value) => {
       if (typeof value !== 'string' || value.length === 0) {
-        return 'Must not be empty.';
+        return 'نباید خالی باشد.';
       }
 
       const assigned = formFieldRegistry._ids.assigned(value);
 
       if (assigned && assigned !== field) {
-        return 'Must be unique.';
+        return 'باید منحصر به فرد باشد.';
       }
 
       return validateId(value) || null;
@@ -64,7 +64,7 @@ function Id(props) {
     element: field,
     getValue,
     id,
-    label: 'ID',
+    label: 'شناسه',
     setValue,
     validate,
   });
@@ -82,15 +82,15 @@ const ID_REGEX = /^[a-z_][\w-.]*$/i;
 
 function validateId(idValue) {
   if (containsSpace(idValue)) {
-    return 'Must not contain spaces.';
+    return 'نباید شامل فاصله (space) باشد.';
   }
 
   if (!ID_REGEX.test(idValue)) {
     if (QNAME_REGEX.test(idValue)) {
-      return 'Must not contain prefix.';
+      return 'نباید دارای پیشوند باشد.';
     }
 
-    return 'Must be a valid QName.';
+    return 'باید یک QName معتبر باشد.';
   }
 }
 
