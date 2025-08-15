@@ -49,13 +49,13 @@ const SimpleRangeIntegerEntry = (props) => {
         return;
       }
       if (!Number.isInteger(Number(value))) {
-        return 'Should be an integer.';
+        return 'باید یک عدد صحیح باشد.';
       }
       if (Big(value).cmp(min) < 0) {
-        return `Should be at least ${min}.`;
+        return `باید حداقل ${min} باشد.`;
       }
       if (Big(value).cmp(max) > 0) {
-        return `Should be at most ${max}.`;
+        return `حداکثر باید ${max} باشد.`;
       }
     },
     [min, max],
