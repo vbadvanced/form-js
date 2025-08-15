@@ -2,7 +2,7 @@ import { get, isArray } from 'min-dash';
 
 import { ColumnsExpressionEntry, HeadersSourceSelectEntry, StaticColumnsSourceEntry } from '../entries';
 
-import { Group, ListGroup } from '@bpmn-io/properties-panel';
+import { Group, ListGroup } from '@vbadvanced/properties-panel';
 
 export function TableHeaderGroups(field, editField) {
   const { type, id: fieldId } = field;

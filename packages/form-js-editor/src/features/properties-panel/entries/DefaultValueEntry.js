@@ -5,7 +5,7 @@ import {
   SelectEntry,
   TextFieldEntry,
   TextAreaEntry,
-} from '@bpmn-io/properties-panel';
+} from '@vbadvanced/properties-panel';
 
 import { get } from 'min-dash';
 

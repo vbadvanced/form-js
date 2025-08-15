@@ -1,4 +1,4 @@
-import { FeelEntry, isFeelEntryEdited } from '@bpmn-io/properties-panel';
+import { FeelEntry, isFeelEntryEdited } from '@vbadvanced/properties-panel';
 import { get } from 'min-dash';
 
 import { useService, useVariables } from '../hooks';

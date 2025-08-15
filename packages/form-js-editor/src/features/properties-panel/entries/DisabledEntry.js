@@ -2,7 +2,7 @@ import { get } from 'min-dash';
 
 import { INPUTS } from '../Util';
 
-import { ToggleSwitchEntry, isToggleSwitchEntryEdited } from '@bpmn-io/properties-panel';
+import { ToggleSwitchEntry, isToggleSwitchEntryEdited } from '@vbadvanced/properties-panel';
 
 export function DisabledEntry(props) {
   const { editField, field } = props;

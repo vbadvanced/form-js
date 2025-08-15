@@ -4,7 +4,7 @@ import { hasIntegerPathSegment, isProhibitedPath, isValidDotPath } from '../Util
 
 import { useService } from '../hooks';
 
-import { TextFieldEntry, isTextFieldEntryEdited } from '@bpmn-io/properties-panel';
+import { TextFieldEntry, isTextFieldEntryEdited } from '@vbadvanced/properties-panel';
 import { useCallback } from 'preact/hooks';
 
 export function KeyEntry(props) {

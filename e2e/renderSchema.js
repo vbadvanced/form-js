@@ -1,4 +1,4 @@
-import { FormPlayground, FormEditor, Form } from '@bpmn-io/form-js';
+import { FormPlayground, FormEditor, Form } from '@vbadvanced/form-js';
 import emptySchema from './visual/fixtures/empty.json';
 
 const DEFAULT_SCHEMA = {

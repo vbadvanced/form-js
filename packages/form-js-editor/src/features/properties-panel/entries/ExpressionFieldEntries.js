@@ -1,4 +1,4 @@
-import { FeelEntry, isFeelEntryEdited, SelectEntry, isSelectEntryEdited } from '@bpmn-io/properties-panel';
+import { FeelEntry, isFeelEntryEdited, SelectEntry, isSelectEntryEdited } from '@vbadvanced/properties-panel';
 import { useService, useVariables } from '../hooks';
 
 export function ExpressionFieldEntries(props) {

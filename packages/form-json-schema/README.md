@@ -1,6 +1,6 @@
 > ℹ️ This project is a development tool and not intended for production usage.
 
-# @bpmn-io/form-json-schema
+# @vbadvanced/form-json-schema
 
 JSON Schema for [form-js](https://github.com/bpmn-io/form-js). The schema is built on top of and validated by [`json-schema@draft-07`](https://json-schema.org/draft-07/json-schema-release-notes.html).
 
@@ -10,7 +10,7 @@ Set the `$schema` attribute to reference the [JSON Schema definition](./resource
 
 ```js
 {
-  "$schema": "https://unpkg.com/@bpmn-io/form-json-schema/resources/schema.json",
+  "$schema": "https://unpkg.com/@vbadvanced/form-json-schema/resources/schema.json",
   "type": "default",
   "schemaVersion": 11,
   "components": []
@@ -20,7 +20,7 @@ Set the `$schema` attribute to reference the [JSON Schema definition](./resource
 You can also use a specific version.
 
 ```js
-"$schema": "https://unpkg.com/@bpmn-io/form-json-schema@0.2.0/resources/schema.json"
+"$schema": "https://unpkg.com/@vbadvanced/form-json-schema@0.2.0/resources/schema.json"
 ```
 
 ## Build and Run

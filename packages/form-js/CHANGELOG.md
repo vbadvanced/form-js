@@ -121,7 +121,7 @@ _**Note:** Yet to be released changes appear here._
 - `FIX`: ensure group paths are properly registered on add ([#1173](https://github.com/bpmn-io/form-js/issues/1173))
 - `FIX`: properly build out FEEL parent context chain ([#1191](https://github.com/bpmn-io/form-js/issues/1191))
 - `FIX`: removed deprecated `useSort` properties panel attributes ([#1200](https://github.com/bpmn-io/form-js/issues/1200))
-- `CHORE`: bump @bpmn-io/properties-panel@3.20.1, adding visual improvements to the feel (and feelers) popout editor ([43c5615e](https://github.com/bpmn-io/form-js/commit/43c5615e94d23b2ad61bc7f858f28a3988214bfa))
+- `CHORE`: bump @vbadvanced/properties-panel@3.20.1, adding visual improvements to the feel (and feelers) popout editor ([43c5615e](https://github.com/bpmn-io/form-js/commit/43c5615e94d23b2ad61bc7f858f28a3988214bfa))
 
 ## 1.8.7
 
@@ -206,7 +206,7 @@ _**Note:** Yet to be released changes appear here._
 
 - `FIX`: resize textarea on input changes ([#1011](https://github.com/bpmn-io/form-js/issues/1011))
 - `FIX`: synchronize field validation properly ([#1009](https://github.com/bpmn-io/form-js/issues/1009))
-- `DEPS`: @bpmn-io/properties-panel@3.18.1 ([a4e9b6d](https://github.com/bpmn-io/form-js/commit/a4e9b6dbd3f6f01e9f88d04b43f77f94b745403d))
+- `DEPS`: @vbadvanced/properties-panel@3.18.1 ([a4e9b6d](https://github.com/bpmn-io/form-js/commit/a4e9b6dbd3f6f01e9f88d04b43f77f94b745403d))
 
 ## 1.7.0-alpha.0
 
@@ -214,7 +214,7 @@ _**Note:** Yet to be released changes appear here._
 - `FIX`: repeatable entry parameters now validate with errors ([#1000](https://github.com/bpmn-io/form-js/pull/1000))
 - `FIX`: show iframe title in editor ([#991](https://github.com/bpmn-io/form-js/pull/991))
 - `FIX`: prevent demo data from being created on edited tables ([#1005](https://github.com/bpmn-io/form-js/pull/1005))
-- `DEPS`: update to diagram-js@13.4.0, min-dash@4.2.1, min-dom@4.1.0, @bpmn-io/properties-panel@3.18.0 ([#1008](https://github.com/bpmn-io/form-js/pull/1008)) ([#1016](https://github.com/bpmn-io/form-js/pull/1016))
+- `DEPS`: update to diagram-js@13.4.0, min-dash@4.2.1, min-dom@4.1.0, @vbadvanced/properties-panel@3.18.0 ([#1008](https://github.com/bpmn-io/form-js/pull/1008)) ([#1016](https://github.com/bpmn-io/form-js/pull/1016))
 
 ## 1.6.4
 
@@ -268,7 +268,7 @@ _**Note:** Yet to be released changes appear here._
 
 ### Breaking Changes
 
-The `@bpmn-io/form-js-carbon-styles` deprecates the `carbon-styles.js` styled component export. The `type` definitions got removed from the package. Please use the `src/carbon-styles.scss` stylesheet instead.
+The `@vbadvanced/form-js-carbon-styles` deprecates the `carbon-styles.js` styled component export. The `type` definitions got removed from the package. Please use the `src/carbon-styles.scss` stylesheet instead.
 
 ## 1.4.1
 
@@ -277,7 +277,7 @@ The `@bpmn-io/form-js-carbon-styles` deprecates the `carbon-styles.js` styled co
 - `FIX`: clean up default value on options source change ([#859](https://github.com/bpmn-io/form-js/issues/859))
 - `FIX`: improve color contrast in input data placeholder ([#876](https://github.com/bpmn-io/form-js/pull/876))
 - `FIX`: add title to remove action ([#877](https://github.com/bpmn-io/form-js/pull/877))
-- `DEPS`: update to `@bpmn-io/properties-panel@3.13.0`
+- `DEPS`: update to `@vbadvanced/properties-panel@3.13.0`
 
 ## 1.4.0
 
@@ -303,7 +303,7 @@ The `@bpmn-io/form-js-carbon-styles` deprecates the `carbon-styles.js` styled co
 - `FEAT`: add `isDefaultVisible` control to all properties panel entries ([#776](https://github.com/bpmn-io/form-js/pull/776))
 - `FEAT`: re-export hooks
 - `FEAT`: better keyboard support for pallette entries ([#536](https://github.com/bpmn-io/form-js/issues/536))
-- `DEPS`: update to `@bpmn-io/properties-panel@3.11.0`
+- `DEPS`: update to `@vbadvanced/properties-panel@3.11.0`
 - `FIX`: improve pallette visuals ([#539](https://github.com/bpmn-io/form-js/issues/539)) ([#848](https://github.com/bpmn-io/form-js/issues/848))
 
 ### Playground
@@ -376,7 +376,7 @@ The `@bpmn-io/form-js-carbon-styles` deprecates the `carbon-styles.js` styled co
 - `FEAT`: implement first set of tooltips ([e36de9a78](https://github.com/bpmn-io/form-js/commit/e36de9a78088485f6fdc65fea639d60779dceab9))
 - `FIX`: dynamically set drag and drop axis ([34767366](https://github.com/bpmn-io/form-js/commit/3476736615050a301ab240c54da6658f579593cd))
 - `FIX`: serialize empty labels as empty string ([3a700de5](https://github.com/bpmn-io/form-js/commit/3a700de5629c5244e49cdc8e507d38b790323321))
-- `DEPS`: replaced `dragula` with our own `@bpmn-io/draggle@4.0.0` fork ([34767366](https://github.com/bpmn-io/form-js/commit/3476736615050a301ab240c54da6658f579593cd))
+- `DEPS`: replaced `dragula` with our own `@vbadvanced/draggle@4.0.0` fork ([34767366](https://github.com/bpmn-io/form-js/commit/3476736615050a301ab240c54da6658f579593cd))
 
 ## 1.1.0
 
@@ -386,7 +386,7 @@ The `@bpmn-io/form-js-carbon-styles` deprecates the `carbon-styles.js` styled co
 - `FIX`: properly parse variables in FEEL filter expressions ([#711](https://github.com/bpmn-io/form-js/pull/711))
 - `FIX`: break overflowing words in text views ([#651](https://github.com/bpmn-io/form-js/issues/651))
 - `CHORE`: update schemaVersion to 10
-- `DEPS`: update to `@bpmn-io/properties-panel@3`
+- `DEPS`: update to `@vbadvanced/properties-panel@3`
 - `DEPS`: update to `feelin@1`
 - `DEPS`: update to `feelers@0.1`
 
@@ -432,7 +432,7 @@ The call signature of `getSchemaVariables` changed, favouring an options object 
 - `FIX`: support markdown tables in `text` ([#205](https://github.com/bpmn-io/form-js/issues/205))
 - `CHORE`: introduce visual regression tests ([#632](https://github.com/bpmn-io/form-js/pull/632))
 - `DEPS`: update to `diagram-js@12` ([`798ac2a2`](https://github.com/bpmn-io/form-js/commit/798ac2a204aab059ecc89c2c96bd302d34295982))
-- `DEPS`: update to `@bpmn-io/properties-panel@2`
+- `DEPS`: update to `@vbadvanced/properties-panel@2`
 - `CHORE`: update `schemaVersion` to 9
 
 ### Viewer
@@ -459,7 +459,7 @@ The call signature of `getSchemaVariables` changed, favouring an options object 
 
 ### Carbon styles
 
-- `FEAT`: introduce `@bpmn-io/form-js-carbon-styles` package ([#557](https://github.com/bpmn-io/form-js/pull/557))
+- `FEAT`: introduce `@vbadvanced/form-js-carbon-styles` package ([#557](https://github.com/bpmn-io/form-js/pull/557))
 - `FIX`: correct margins for lower screens ([#640](https://github.com/bpmn-io/form-js/pull/640))
 
 ### Breaking changes
@@ -478,7 +478,7 @@ const form = new Form({
 We changed the structure of the static component configuration properties. These are now located on a static `config` object, and may now be accessed as follows:
 
 ```js
-import { Button } from '@bpmn-io/form-js-viewer';
+import { Button } from '@vbadvanced/form-js-viewer';
 console.log('Button default label is ' + Button.config.label);
 ```
 
@@ -535,9 +535,9 @@ We changed the internal behavior of rendering `palette` in the editor. Following
 
 ### Breaking Changes
 
-- `@bpmn-io/form-js/dist/assets/dragula.css` got removed
-- `@bpmn-io/form-js/dist/assets/flatpickr/light.css` got removed
-- `@bpmn-io/form-js/dist/assets/properties-panel.css` got removed
+- `@vbadvanced/form-js/dist/assets/dragula.css` got removed
+- `@vbadvanced/form-js/dist/assets/flatpickr/light.css` got removed
+- `@vbadvanced/form-js/dist/assets/properties-panel.css` got removed
 
 The missing styles are included in the general style exports (`form-js.css`, `form-js-editor.css`, `form-js-playground.css`). If you need the base styles on their own, please find them in the additional `*-base.css` exports in the `dist/assets` directory.
 
@@ -658,7 +658,7 @@ The missing styles are included in the general style exports (`form-js.css`, `fo
 - `FEAT`: retrieve variables mentioned in conditions ([#401](https://github.com/bpmn-io/form-js/issues/401))
 - `FEAT`: retrieve variables mentioned in expressions ([`32532aa7`](https://github.com/bpmn-io/form-js/commit/32532aa7d13b99ff621839300ba82282491fb9a8))
 - `DEPS`: update to `diagram-js@11` ([`6e2d5a1d`](https://github.com/bpmn-io/form-js/commit/6e2d5a1d15fcd8a3c8c2b9787adcc637e46c552b))
-- `DEPS`: update to `@bpmn-io/properties-panel@1` ([`fdda226f`](https://github.com/bpmn-io/form-js/commit/fdda226ff986532f6058a37dc647ac296ff3e8f4))
+- `DEPS`: update to `@vbadvanced/properties-panel@1` ([`fdda226f`](https://github.com/bpmn-io/form-js/commit/fdda226ff986532f6058a37dc647ac296ff3e8f4))
 
 ### Editor
 
@@ -668,7 +668,7 @@ The missing styles are included in the general style exports (`form-js.css`, `fo
 
 ### Editor
 
-- `DEPS`: add `@bpmn-io/properties-panel` dependency ([#429](https://github.com/bpmn-io/form-js/pull/429))
+- `DEPS`: add `@vbadvanced/properties-panel` dependency ([#429](https://github.com/bpmn-io/form-js/pull/429))
 
 ### Viewer
 
@@ -895,7 +895,7 @@ _Re-release of 0.9.2._
 
 ### Playground
 
-_Initial public release of the `@bpmn-io/form-js-playground` :tada:._
+_Initial public release of the `@vbadvanced/form-js-playground` :tada:._
 
 ## 0.4.4
 

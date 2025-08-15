@@ -7,8 +7,8 @@ import mitt from 'mitt';
 import { PlaygroundRoot } from './components/PlaygroundRoot';
 
 /**
- * @typedef { import('@bpmn-io/form-js-viewer/dist/types/types').FormProperties } FormProperties
- * @typedef { import('@bpmn-io/form-js-editor/dist/types/types').FormEditorProperties } FormEditorProperties
+ * @typedef { import('@vbadvanced/form-js-viewer/dist/types/types').FormProperties } FormProperties
+ * @typedef { import('@vbadvanced/form-js-editor/dist/types/types').FormEditorProperties } FormEditorProperties
  *
  * @typedef { {
  *  actions?: { display: Boolean }

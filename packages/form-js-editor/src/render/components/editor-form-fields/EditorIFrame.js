@@ -1,4 +1,4 @@
-import { iconsByType, IFrame, Label } from '@bpmn-io/form-js-viewer';
+import { iconsByType, IFrame, Label } from '@vbadvanced/form-js-viewer';
 
 import { editorFormFieldClasses } from '../Util';
 

@@ -1,4 +1,4 @@
-import { createForm, createFormEditor, Form, FormEditor, FormPlayground, schemaVersion } from '@bpmn-io/form-js';
+import { createForm, createFormEditor, Form, FormEditor, FormPlayground, schemaVersion } from '@vbadvanced/form-js';
 
 /**
  * A TypeScript application that verifies our type

@@ -1,8 +1,8 @@
 import './test.css';
 
-import '@bpmn-io/form-js-viewer/dist/assets/form-js.css';
+import '@vbadvanced/form-js-viewer/dist/assets/form-js.css';
 
-import '@bpmn-io/form-js-editor/dist/assets/form-js-editor.css';
+import '@vbadvanced/form-js-editor/dist/assets/form-js-editor.css';
 
 export { expectNoViolations } from '../../form-js-viewer/test/helper';
 

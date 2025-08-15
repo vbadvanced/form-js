@@ -1,7 +1,7 @@
 import { without } from 'min-dash';
 import { arrayAdd } from '../Util';
 import { ValueEntry } from './ValueEntry';
-import { OPTIONS_SOURCES, OPTIONS_SOURCES_PATHS } from '@bpmn-io/form-js-viewer';
+import { OPTIONS_SOURCES, OPTIONS_SOURCES_PATHS } from '@vbadvanced/form-js-viewer';
 
 export function StaticOptionsSourceEntry(props) {
   const { editField, field, id: idPrefix } = props;

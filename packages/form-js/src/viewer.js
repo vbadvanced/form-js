@@ -1,1 +1,1 @@
-export * from '@bpmn-io/form-js-viewer';
+export * from '@vbadvanced/form-js-viewer';

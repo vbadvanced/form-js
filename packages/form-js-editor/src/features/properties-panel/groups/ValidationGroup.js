@@ -8,7 +8,7 @@ import {
   isTextFieldEntryEdited,
   TextFieldEntry,
   SelectEntry,
-} from '@bpmn-io/properties-panel';
+} from '@vbadvanced/properties-panel';
 
 import { useService, useVariables } from '../hooks';
 

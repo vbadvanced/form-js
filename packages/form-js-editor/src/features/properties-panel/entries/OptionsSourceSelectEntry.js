@@ -8,7 +8,7 @@ import {
   OPTIONS_SOURCES_DEFAULTS,
   OPTIONS_SOURCES_LABELS,
   OPTIONS_SOURCES_PATHS,
-} from '@bpmn-io/form-js-viewer';
+} from '@vbadvanced/form-js-viewer';
 
 const isOptionsSourceEdited = isEditedFromDefaultFactory(OPTIONS_SOURCES.STATIC);
 

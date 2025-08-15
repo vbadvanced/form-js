@@ -2,7 +2,7 @@ import { get, set } from 'min-dash';
 
 import { useService } from '../hooks';
 
-import { isSelectEntryEdited, SelectEntry } from '@bpmn-io/properties-panel';
+import { isSelectEntryEdited, SelectEntry } from '@vbadvanced/properties-panel';
 
 import { MIN_COLUMNS } from '../../../core/FormLayoutValidator';
 import { useCallback } from 'preact/hooks';

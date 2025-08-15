@@ -9,13 +9,13 @@ export function EmbedModal(props) {
   const fieldRef = useRef();
 
   const snippet = `<!-- styles needed for rendering -->
-<link rel="stylesheet" href="https://unpkg.com/@bpmn-io/form-js@0.2.4/dist/assets/form-js.css">
+<link rel="stylesheet" href="https://unpkg.com/@vbadvanced/form-js@0.2.4/dist/assets/form-js.css">
 
 <!-- container to render the form into -->
 <div class="fjs-pgl-form-container"></div>
 
 <!-- scripts needed for embedding -->
-<script src="https://unpkg.com/@bpmn-io/form-js@0.2.4/dist/form-viewer.umd.js"></script>
+<script src="https://unpkg.com/@vbadvanced/form-js@0.2.4/dist/form-viewer.umd.js"></script>
 
 <!-- actual script to instantiate the form and load form schema + data -->
 <script>

@@ -1,6 +1,6 @@
 import { get, set } from 'min-dash';
 
-import { NumberFieldEntry, isNumberFieldEntryEdited } from '@bpmn-io/properties-panel';
+import { NumberFieldEntry, isNumberFieldEntryEdited } from '@vbadvanced/properties-panel';
 
 class CustomPropertiesProvider {
   constructor(propertiesPanel) {

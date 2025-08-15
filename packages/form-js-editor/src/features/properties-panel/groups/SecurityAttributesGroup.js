@@ -2,7 +2,7 @@ import { get, set } from 'min-dash';
 
 import { simpleBoolEntryFactory } from '../entries/factories';
 
-import { SECURITY_ATTRIBUTES_DEFINITIONS } from '@bpmn-io/form-js-viewer';
+import { SECURITY_ATTRIBUTES_DEFINITIONS } from '@vbadvanced/form-js-viewer';
 
 export function SecurityAttributesGroup(field, editField) {
   const { type } = field;

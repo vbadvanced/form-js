@@ -1,11 +1,11 @@
-import { SelectEntry } from '@bpmn-io/properties-panel';
+import { SelectEntry } from '@vbadvanced/properties-panel';
 
 import {
   DATETIME_SUBTYPES,
   TIME_SERIALISING_FORMATS,
   TIME_SERIALISINGFORMAT_LABELS,
   TIME_SERIALISING_FORMAT_PATH,
-} from '@bpmn-io/form-js-viewer';
+} from '@vbadvanced/form-js-viewer';
 
 import { get } from 'min-dash';
 import { isEditedFromDefaultFactory } from '../Util';

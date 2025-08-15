@@ -1,4 +1,4 @@
-import { NumberFieldEntry, isNumberFieldEntryEdited } from '@bpmn-io/properties-panel';
+import { NumberFieldEntry, isNumberFieldEntryEdited } from '@vbadvanced/properties-panel';
 
 import { get, isFunction } from 'min-dash';
 import { useService } from '../hooks';

@@ -1,4 +1,4 @@
-import { FeelExpressionLanguage } from '@bpmn-io/form-js-viewer';
+import { FeelExpressionLanguage } from '@vbadvanced/form-js-viewer';
 import { EditorTemplating } from './EditorTemplating';
 
 export const EditorExpressionLanguageModule = {

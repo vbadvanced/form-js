@@ -1,5 +1,5 @@
 import { get } from 'min-dash';
-import { isSelectEntryEdited, SelectEntry } from '@bpmn-io/properties-panel';
+import { isSelectEntryEdited, SelectEntry } from '@vbadvanced/properties-panel';
 
 export function simpleSelectEntryFactory(options) {
   const { id, label, path, props, optionsArray } = options;

@@ -6,7 +6,7 @@ import { expectNoViolations, createFormContainer } from '../../../../TestHelper'
 
 import { WithEditorFormContext } from './helper';
 
-import { FeelersTemplating } from '@bpmn-io/form-js-viewer';
+import { FeelersTemplating } from '@vbadvanced/form-js-viewer';
 
 let container;
 

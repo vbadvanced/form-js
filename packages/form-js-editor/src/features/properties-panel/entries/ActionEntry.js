@@ -1,6 +1,6 @@
 import { get } from 'min-dash';
 
-import { SelectEntry, isSelectEntryEdited } from '@bpmn-io/properties-panel';
+import { SelectEntry, isSelectEntryEdited } from '@vbadvanced/properties-panel';
 
 export function ActionEntry(props) {
   const { editField, field } = props;

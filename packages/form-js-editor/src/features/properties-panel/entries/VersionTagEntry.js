@@ -2,7 +2,7 @@ import { get } from 'min-dash';
 
 import { useService } from '../hooks';
 
-import { TextFieldEntry, isTextFieldEntryEdited } from '@bpmn-io/properties-panel';
+import { TextFieldEntry, isTextFieldEntryEdited } from '@vbadvanced/properties-panel';
 
 export function VersionTagEntry(props) {
   const { editField, field } = props;

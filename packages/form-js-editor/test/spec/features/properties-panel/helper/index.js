@@ -1,4 +1,4 @@
-import { PropertiesPanel } from '@bpmn-io/properties-panel';
+import { PropertiesPanel } from '@vbadvanced/properties-panel';
 import { FormPropertiesPanelContext } from '../../../../../src/features/properties-panel/context';
 import { createMockInjector } from '../../../../helper/mocks';
 
@@ -17,7 +17,7 @@ export const MockPropertiesPanelContext = (props) => {
   );
 };
 
-const noop = () => {};
+const noop = () => { };
 
 const noopField = {
   id: 'foobar',

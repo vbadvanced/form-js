@@ -2,7 +2,7 @@ import CommandInterceptor from 'diagram-js/lib/command/CommandInterceptor';
 
 import { get } from 'min-dash';
 
-import { OPTIONS_SOURCES, OPTIONS_SOURCES_PATHS } from '@bpmn-io/form-js-viewer';
+import { OPTIONS_SOURCES, OPTIONS_SOURCES_PATHS } from '@vbadvanced/form-js-viewer';
 
 export class OptionsSourceBehavior extends CommandInterceptor {
   constructor(eventBus) {

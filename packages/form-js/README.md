@@ -1,4 +1,4 @@
-# @bpmn-io/form-js
+# @vbadvanced/form-js
 
 [![CI](https://github.com/bpmn-io/form-js/workflows/CI/badge.svg)](https://github.com/bpmn-io/form-js/actions?query=workflow%3ACI)
 
@@ -13,7 +13,7 @@ This library exports a [form viewer](../form-js-viewer), [editor](../form-js-edi
 Renders a form based on [a form schema](./docs/FORM_SCHEMA.md) and existing data:
 
 ```javascript
-import { Form } from '@bpmn-io/form-js';
+import { Form } from '@vbadvanced/form-js';
 
 const schema = {
   type: 'default',
@@ -51,7 +51,7 @@ See [viewer documentation](./packages/form-js-viewer) for further details.
 Create a new form or edit an exsting one:
 
 ```javascript
-import { FormEditor } from '@bpmn-io/form-js';
+import { FormEditor } from '@vbadvanced/form-js';
 
 const formEditor = new FormEditor({
   container: document.querySelector('#form-editor'),
@@ -67,7 +67,7 @@ See [editor documentation](./packages/form-js-editor) for further details.
 Create and simulate a form with input and output data:
 
 ```javascript
-import { FormPlayground } from '@bpmn-io/form-js';
+import { FormPlayground } from '@vbadvanced/form-js';
 
 const schema = {
   type: 'default',
@@ -101,7 +101,7 @@ See [playground documentation](./packages/form-js-playground) for further detail
 Use the `getSchemaVariables` util to retrieve the variables defined in a form schema. This is useful to gather what data is consumed and produced by a form.
 
 ```javascript
-import { getSchemaVariables } from '@bpmn-io/form-js';
+import { getSchemaVariables } from '@vbadvanced/form-js';
 
 const variables = getSchemaVariables(schema);
 
@@ -111,7 +111,7 @@ console.log('Schema variables', variables);
 It is also possible to distinct between input and output variables:
 
 ```javascript
-import { getSchemaVariables } from '@bpmn-io/form-js';
+import { getSchemaVariables } from '@vbadvanced/form-js';
 
 const outputVariables = getSchemaVariables(schema, { inputs: false });
 const inputVariables = getSchemaVariables(schema, { outputs: false });

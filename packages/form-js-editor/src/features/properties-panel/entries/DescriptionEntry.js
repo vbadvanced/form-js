@@ -4,7 +4,7 @@ import { INPUTS } from '../Util';
 
 import { useService, useVariables } from '../hooks';
 
-import { FeelTemplatingEntry, isFeelEntryEdited } from '@bpmn-io/properties-panel';
+import { FeelTemplatingEntry, isFeelEntryEdited } from '@vbadvanced/properties-panel';
 
 export function DescriptionEntry(props) {
   const { editField, field } = props;

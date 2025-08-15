@@ -21,7 +21,7 @@ function pgl(plugins = []) {
       ],
     }),
     resolve({
-      resolveOnly: ['diagram-js', '@bpmn-io/properties-panel'],
+      resolveOnly: ['diagram-js', '@vbadvanced/properties-panel'],
     }),
     reactSvg(),
     babel({
@@ -64,15 +64,15 @@ export default [
       'preact/jsx-runtime',
       'preact/hooks',
       'preact/compat',
-      '@bpmn-io/draggle',
-      '@bpmn-io/form-js-viewer',
+      '@vbadvanced/draggle',
+      '@vbadvanced/form-js-viewer',
     ],
     plugins: pgl([
       copy({
         targets: [
           { src: 'assets/form-js-editor-base.css', dest: 'dist/assets' },
-          { src: '../../node_modules/@bpmn-io/draggle/dist/draggle.css', dest: 'dist/assets' },
-          { src: '../../node_modules/@bpmn-io/properties-panel/dist/assets/properties-panel.css', dest: 'dist/assets' },
+          { src: '../../node_modules/@vbadvanced/draggle/dist/draggle.css', dest: 'dist/assets' },
+          { src: '../../node_modules/@vbadvanced/properties-panel/dist/assets/properties-panel.css', dest: 'dist/assets' },
         ],
       }),
     ]),

@@ -1,5 +1,5 @@
 import { get } from 'min-dash';
-import { ToggleSwitchEntry, isToggleSwitchEntryEdited } from '@bpmn-io/properties-panel';
+import { ToggleSwitchEntry, isToggleSwitchEntryEdited } from '@vbadvanced/properties-panel';
 import { isTrueDefaultToggleSwitchEntryEdited } from '../../Util';
 
 export function simpleBoolEntryFactory(options) {

@@ -1,4 +1,4 @@
-import { CheckboxEntry, isCheckboxEntryEdited, SelectEntry, isSelectEntryEdited } from '@bpmn-io/properties-panel';
+import { CheckboxEntry, isCheckboxEntryEdited, SelectEntry, isSelectEntryEdited } from '@vbadvanced/properties-panel';
 
 import {
   DATETIME_SUBTYPES,
@@ -11,7 +11,7 @@ import {
   TIME_INTERVAL_PATH,
   TIME_SERIALISING_FORMAT_PATH,
   TIME_SERIALISING_FORMATS,
-} from '@bpmn-io/form-js-viewer';
+} from '@vbadvanced/form-js-viewer';
 
 import { get } from 'min-dash';
 

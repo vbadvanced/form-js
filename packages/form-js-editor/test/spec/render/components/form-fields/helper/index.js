@@ -1,5 +1,5 @@
 import { FormEditorContext } from '../../../../../../src/render/context';
-import { FormContext } from '@bpmn-io/form-js-viewer';
+import { FormContext } from '@vbadvanced/form-js-viewer';
 import { marked } from 'marked';
 
 class MarkdownRenderer {

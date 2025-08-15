@@ -2,7 +2,7 @@ import { get, isString } from 'min-dash';
 
 import { useService, useVariables } from '../hooks';
 
-import { FeelTemplatingEntry, isFeelEntryEdited } from '@bpmn-io/properties-panel';
+import { FeelTemplatingEntry, isFeelEntryEdited } from '@vbadvanced/properties-panel';
 
 const PATH = ['columnsExpression'];
 

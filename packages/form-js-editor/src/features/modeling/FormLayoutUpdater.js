@@ -2,7 +2,7 @@ import { updateRow } from './cmd/Util';
 
 import CommandInterceptor from 'diagram-js/lib/command/CommandInterceptor';
 
-import { clone } from '@bpmn-io/form-js-viewer';
+import { clone } from '@vbadvanced/form-js-viewer';
 
 export class FormLayoutUpdater extends CommandInterceptor {
   constructor(eventBus, formLayouter, modeling, formEditor) {

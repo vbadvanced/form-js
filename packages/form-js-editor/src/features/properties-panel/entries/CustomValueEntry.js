@@ -2,7 +2,7 @@ import { get } from 'min-dash';
 
 import { useService } from '../hooks';
 
-import { TextFieldEntry } from '@bpmn-io/properties-panel';
+import { TextFieldEntry } from '@vbadvanced/properties-panel';
 import { useMemo } from 'preact/hooks';
 
 export function CustomValueEntry(props) {

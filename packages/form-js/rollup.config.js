@@ -21,22 +21,22 @@ export default [
       },
     ],
     external: [
-      '@bpmn-io/form-js-viewer',
-      '@bpmn-io/form-js-editor',
-      '@bpmn-io/form-js-playground',
-      '@bpmn-io/form-js-carbon-styles',
+      '@vbadvanced/form-js-viewer',
+      '@vbadvanced/form-js-editor',
+      '@vbadvanced/form-js-playground',
+      '@vbadvanced/form-js-carbon-styles',
     ],
     plugins: [
       copy({
         targets: [
-          { src: '../../node_modules/@bpmn-io/form-js-viewer/dist/assets/**/*[!light].css', dest: 'dist/assets' },
+          { src: '../../node_modules/@vbadvanced/form-js-viewer/dist/assets/**/*[!light].css', dest: 'dist/assets' },
           {
-            src: '../../node_modules/@bpmn-io/form-js-viewer/dist/assets/flatpickr/*.css',
+            src: '../../node_modules/@vbadvanced/form-js-viewer/dist/assets/flatpickr/*.css',
             dest: 'dist/assets/flatpickr',
           },
-          { src: '../../node_modules/@bpmn-io/form-js-editor/dist/assets/**/*.css', dest: 'dist/assets' },
-          { src: '../../node_modules/@bpmn-io/form-js-playground/dist/assets/**/*.css', dest: 'dist/assets' },
-          { src: '../../node_modules/@bpmn-io/form-js-carbon-styles/src/carbon-styles.scss', dest: 'dist/assets' },
+          { src: '../../node_modules/@vbadvanced/form-js-editor/dist/assets/**/*.css', dest: 'dist/assets' },
+          { src: '../../node_modules/@vbadvanced/form-js-playground/dist/assets/**/*.css', dest: 'dist/assets' },
+          { src: '../../node_modules/@vbadvanced/form-js-carbon-styles/src/carbon-styles.scss', dest: 'dist/assets' },
         ],
       }),
     ],

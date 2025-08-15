@@ -1,7 +1,7 @@
 import { render } from 'preact';
 import { useCallback, useContext, useEffect, useLayoutEffect, useMemo, useRef, useState } from 'preact/hooks';
 
-import { FormComponent, FormContext, FormRenderContext, getScrollContainer } from '@bpmn-io/form-js-viewer';
+import { FormComponent, FormContext, FormRenderContext, getScrollContainer } from '@vbadvanced/form-js-viewer';
 
 import { EmptyFormIcon } from './icons';
 

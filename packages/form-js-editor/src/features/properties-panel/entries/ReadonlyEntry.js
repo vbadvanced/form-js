@@ -4,7 +4,7 @@ import { INPUTS } from '../Util';
 
 import { useService, useVariables } from '../hooks';
 
-import { FeelToggleSwitchEntry, isFeelEntryEdited } from '@bpmn-io/properties-panel';
+import { FeelToggleSwitchEntry, isFeelEntryEdited } from '@vbadvanced/properties-panel';
 
 export function ReadonlyEntry(props) {
   const { editField, field } = props;

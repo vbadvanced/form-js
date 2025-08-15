@@ -1,1 +1,1 @@
-export { FormLayouter } from '@bpmn-io/form-js-viewer';
+export { FormLayouter } from '@vbadvanced/form-js-viewer';

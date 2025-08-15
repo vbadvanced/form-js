@@ -1,7 +1,7 @@
 import { INPUTS, LABELED_NON_INPUTS } from '../Util';
-import { DATETIME_SUBTYPES, DATE_LABEL_PATH, TIME_LABEL_PATH } from '@bpmn-io/form-js-viewer';
+import { DATETIME_SUBTYPES, DATE_LABEL_PATH, TIME_LABEL_PATH } from '@vbadvanced/form-js-viewer';
 import { useService, useVariables } from '../hooks';
-import { FeelTemplatingEntry, isFeelEntryEdited } from '@bpmn-io/properties-panel';
+import { FeelTemplatingEntry, isFeelEntryEdited } from '@vbadvanced/properties-panel';
 import { get } from 'min-dash';
 
 export function LabelEntry(props) {
