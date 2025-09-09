@@ -1,4 +1,4 @@
-import { FormFieldRegistry as BaseFieldRegistry } from '@vbadvanced/form-js-viewer';
+import { FormFieldRegistry as BaseFieldRegistry } from '@bpmn-io/form-js-viewer';
 
 export class FormFieldRegistry extends BaseFieldRegistry {
   /**

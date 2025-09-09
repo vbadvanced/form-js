@@ -1,6 +1,6 @@
 import { bootstrapFormEditor, getFormEditor, countComponents, inject } from 'test/TestHelper';
 
-import { clone } from '@vbadvanced/form-js-viewer';
+import { clone } from '@bpmn-io/form-js-viewer';
 
 import schema from '../form.json';
 import schemaNoIds from '../form-no-ids.json';

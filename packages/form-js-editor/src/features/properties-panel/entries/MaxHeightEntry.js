@@ -2,7 +2,7 @@ import { get } from 'min-dash';
 
 import { useService } from '../hooks';
 
-import { NumberFieldEntry, isNumberFieldEntryEdited } from '@vbadvanced/properties-panel';
+import { NumberFieldEntry, isNumberFieldEntryEdited } from '@bpmn-io/properties-panel';
 
 export function MaxHeightEntry(props) {
   const { editField, field } = props;

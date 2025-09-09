@@ -1,8 +1,8 @@
-# @vbadvanced/form-js-playground
+# @bpmn-io/form-js-playground
 
 [![CI](https://github.com/bpmn-io/form-js/workflows/CI/badge.svg)](https://github.com/bpmn-io/form-js/actions?query=workflow%3ACI)
 
-A tool to try out and explore [@vbadvanced/form-js](../form-js) in a playful manner.
+A tool to try out and explore [@bpmn-io/form-js](../form-js) in a playful manner.
 
 ![Playground Screenshot](./resources/screenshot.png)
 
@@ -11,7 +11,7 @@ A tool to try out and explore [@vbadvanced/form-js](../form-js) in a playful man
 Integrate the playground into your application:
 
 ```javascript
-import { Playground } from '@vbadvanced/form-js-playground';
+import { Playground } from '@bpmn-io/form-js-playground';
 
 const schema = {
   type: 'default',
@@ -50,9 +50,9 @@ For proper styling include the necessary stylesheets, and font used:
   rel="stylesheet" />
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap" rel="stylesheet" />
 
-<link rel="stylesheet" href="https://unpkg.com/@vbadvanced/form-js@0.10.0/dist/assets/form-js.css" />
-<link rel="stylesheet" href="https://unpkg.com/@vbadvanced/form-js@0.10.0/dist/assets/form-js-editor.css" />
-<link rel="stylesheet" href="https://unpkg.com/@vbadvanced/form-js@0.10.0/dist/assets/form-js-playground.css" />
+<link rel="stylesheet" href="https://unpkg.com/@bpmn-io/form-js@0.10.0/dist/assets/form-js.css" />
+<link rel="stylesheet" href="https://unpkg.com/@bpmn-io/form-js@0.10.0/dist/assets/form-js-editor.css" />
+<link rel="stylesheet" href="https://unpkg.com/@bpmn-io/form-js@0.10.0/dist/assets/form-js-playground.css" />
 ```
 
 ## Resources

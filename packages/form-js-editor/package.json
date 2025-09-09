@@ -1,5 +1,5 @@
 {
-  "name": "@vbadvanced/form-js-editor",
+  "name": "@bpmn-io/form-js-editor",
   "version": "1.16.0",
   "description": "Edit forms - powered by bpmn.io",
   "exports": {
@@ -47,9 +47,9 @@
     "url": "https://github.com/bpmn-io"
   },
   "dependencies": {
-    "@vbadvanced/draggle": "^4.1.1",
-    "@vbadvanced/form-js-viewer": "^1.16.0",
-    "@vbadvanced/properties-panel": "^3.30.2",
+    "@bpmn-io/draggle": "^4.1.1",
+    "@bpmn-io/form-js-viewer": "^1.16.0",
+    "@bpmn-io/properties-panel": "^3.30.2",
     "array-move": "^4.0.0",
     "big.js": "^6.2.2",
     "ids": "^1.0.5",

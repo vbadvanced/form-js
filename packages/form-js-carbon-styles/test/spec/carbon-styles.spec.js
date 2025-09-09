@@ -2,7 +2,7 @@ import 'preact/debug';
 
 import { ThemeProvider } from 'styled-components';
 
-import { Form } from '@vbadvanced/form-js-viewer';
+import { Form } from '@bpmn-io/form-js-viewer';
 
 import { render, waitFor } from '@testing-library/preact/pure';
 
@@ -18,7 +18,7 @@ import { expectNoViolations, insertCSS, isSingleStart } from '../TestHelper';
 
 import schema from './complex.json';
 
-import formCSS from '@vbadvanced/form-js-viewer/dist/assets/form-js-base.css';
+import formCSS from '@bpmn-io/form-js-viewer/dist/assets/form-js-base.css';
 
 import themeCSS from './theme.scss';
 

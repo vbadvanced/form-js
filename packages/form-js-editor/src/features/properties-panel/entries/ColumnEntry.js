@@ -2,7 +2,7 @@ import { get, set, isString } from 'min-dash';
 
 import { useService } from '../hooks';
 
-import { TextFieldEntry } from '@vbadvanced/properties-panel';
+import { TextFieldEntry } from '@bpmn-io/properties-panel';
 
 const path = 'columns';
 const labelPath = 'label';

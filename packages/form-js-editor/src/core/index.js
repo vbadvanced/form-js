@@ -1,4 +1,4 @@
-import { FieldFactory, Importer, PathRegistry } from '@vbadvanced/form-js-viewer';
+import { FieldFactory, Importer, PathRegistry } from '@bpmn-io/form-js-viewer';
 
 import { EventBus } from './EventBus';
 import { DebounceFactory } from './Debounce';

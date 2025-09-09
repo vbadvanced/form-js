@@ -2,8 +2,8 @@ import { get } from 'min-dash';
 
 import { useService, useVariables } from '../hooks';
 
-import { FeelTemplatingEntry } from '@vbadvanced/properties-panel';
-import { TEXT_VIEW_DEFAULT_TEXT } from '@vbadvanced/form-js-viewer';
+import { FeelTemplatingEntry } from '@bpmn-io/properties-panel';
+import { TEXT_VIEW_DEFAULT_TEXT } from '@bpmn-io/form-js-viewer';
 import { isEditedFromDefaultFactory } from '../Util';
 
 const isTextEdited = isEditedFromDefaultFactory(TEXT_VIEW_DEFAULT_TEXT, false);

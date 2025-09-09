@@ -2,7 +2,7 @@ import { get } from 'min-dash';
 
 import { arrayAdd, arrayRemove, updatePath } from './Util';
 
-import { runRecursively } from '@vbadvanced/form-js-viewer';
+import { runRecursively } from '@bpmn-io/form-js-viewer';
 
 export class RemoveFormFieldHandler {
   /**

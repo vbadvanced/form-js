@@ -1,5 +1,5 @@
 import Ids from 'ids';
-import { clone, createFormContainer, createInjector, schemaVersion } from '@vbadvanced/form-js-viewer';
+import { clone, createFormContainer, createInjector, schemaVersion } from '@bpmn-io/form-js-viewer';
 import { isString, set } from 'min-dash';
 
 import { CoreModule } from './core';
@@ -14,7 +14,7 @@ import { PropertiesPanelModule } from './features/properties-panel';
 import { RenderInjectionModule } from './features/render-injection';
 import { RepeatRenderModule } from './features/repeat-render';
 
-import { MarkdownRendererModule } from '@vbadvanced/form-js-viewer';
+import { MarkdownRendererModule } from '@bpmn-io/form-js-viewer';
 
 const ids = new Ids([32, 36, 1]);
 
@@ -306,8 +306,8 @@ export class FormEditor {
 export function exportSchema(schema, exporter, schemaVersion) {
   const exportDetails = exporter
     ? {
-      exporter,
-    }
+        exporter,
+      }
     : {};
 
   const cleanedSchema = clone(schema, (name, value) => {

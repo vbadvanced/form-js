@@ -2,7 +2,7 @@ import { get } from 'min-dash';
 
 import { useService } from '../hooks';
 
-import { TextFieldEntry, isTextFieldEntryEdited } from '@vbadvanced/properties-panel';
+import { TextFieldEntry, isTextFieldEntryEdited } from '@bpmn-io/properties-panel';
 
 import { isProhibitedPath, isValidDotPath, hasIntegerPathSegment } from '../Util';
 import { useCallback } from 'preact/hooks';

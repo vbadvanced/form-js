@@ -329,7 +329,7 @@ function select(cm, anchor, head = anchor) {
 }
 
 /**
- * Copied over from @vbadvanced/feel-editor.
+ * Copied over from @bpmn-io/feel-editor.
  */
 async function expectEventually(fn) {
   const nextFrame = () =>

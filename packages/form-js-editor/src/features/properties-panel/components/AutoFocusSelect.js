@@ -1,6 +1,6 @@
 import { useEffect } from 'preact/hooks';
 
-import { SelectEntry, usePrevious } from '@vbadvanced/properties-panel';
+import { SelectEntry, usePrevious } from '@bpmn-io/properties-panel';
 
 import { useService } from '../hooks';
 

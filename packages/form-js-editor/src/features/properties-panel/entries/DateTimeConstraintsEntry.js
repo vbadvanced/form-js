@@ -1,6 +1,6 @@
-import { CheckboxEntry, isCheckboxEntryEdited, SelectEntry } from '@vbadvanced/properties-panel';
+import { CheckboxEntry, isCheckboxEntryEdited, SelectEntry } from '@bpmn-io/properties-panel';
 
-import { DATETIME_SUBTYPES, DATE_DISALLOW_PAST_PATH, TIME_INTERVAL_PATH } from '@vbadvanced/form-js-viewer';
+import { DATETIME_SUBTYPES, DATE_DISALLOW_PAST_PATH, TIME_INTERVAL_PATH } from '@bpmn-io/form-js-viewer';
 
 import { get } from 'min-dash';
 import { isEditedFromDefaultFactory } from '../Util';

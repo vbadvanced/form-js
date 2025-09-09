@@ -3,7 +3,7 @@ import {
   isNumberFieldEntryEdited,
   TextFieldEntry,
   isTextFieldEntryEdited,
-} from '@vbadvanced/properties-panel';
+} from '@bpmn-io/properties-panel';
 import { get } from 'min-dash';
 import { useService } from '../hooks';
 import { countDecimals, isValidNumber } from '../Util';

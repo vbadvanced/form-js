@@ -1,6 +1,6 @@
 import { cleanup, render } from '@testing-library/preact/pure';
 
-import { FormFields } from '@vbadvanced/form-js-viewer';
+import { FormFields } from '@bpmn-io/form-js-viewer';
 
 import { getPropertiesPanelHeaderProvider } from '../../../../src/features/properties-panel/PropertiesPanelHeaderProvider';
 

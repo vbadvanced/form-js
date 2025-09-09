@@ -1,6 +1,6 @@
 import { get } from 'min-dash';
 import { useService } from '../../hooks';
-import { NumberFieldEntry, isNumberFieldEntryEdited } from '@vbadvanced/properties-panel';
+import { NumberFieldEntry, isNumberFieldEntryEdited } from '@bpmn-io/properties-panel';
 
 export function zeroPositiveIntegerEntryFactory(options) {
   const { id, label, path, props } = options;

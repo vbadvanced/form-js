@@ -16,7 +16,7 @@ git clone --depth=1 "https://$BPMN_IO_TOKEN@github.com/$BPMN_IO_DEMO_ENDPOINT.gi
 
 cd "$CLONE_DIR"
 
-npm install --save @vbadvanced/form-js@$TAG diagram-js@latest
+npm install --save @bpmn-io/form-js@$TAG diagram-js@latest
 
 if [[ "x$SKIP_COMMIT" = "x" ]]; then
 
@@ -25,7 +25,7 @@ if [[ "x$SKIP_COMMIT" = "x" ]]; then
   git config push.default simple
 
   git add -A
-  git commit -m "deps: bump to @vbadvanced/form-js@$TAG"
+  git commit -m "deps: bump to @bpmn-io/form-js@$TAG"
   git tag "form-js-$TAG"
   git push -q &2>/dev/null
   git push --tags -q &2>/dev/null

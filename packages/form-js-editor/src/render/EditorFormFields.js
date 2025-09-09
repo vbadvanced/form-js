@@ -1,4 +1,4 @@
-import { FormFields } from '@vbadvanced/form-js-viewer';
+import { FormFields } from '@bpmn-io/form-js-viewer';
 import { editorFormFields } from './components/editor-form-fields/';
 
 export class EditorFormFields extends FormFields {

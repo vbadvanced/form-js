@@ -1,4 +1,4 @@
-import { getSchemaVariables } from '@vbadvanced/form-js-viewer';
+import { getSchemaVariables } from '@bpmn-io/form-js-viewer';
 import { useService } from './usePropertiesPanelService';
 
 /**

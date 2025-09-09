@@ -1,4 +1,4 @@
-import { NumberFieldEntry, isNumberFieldEntryEdited } from '@vbadvanced/properties-panel';
+import { NumberFieldEntry, isNumberFieldEntryEdited } from '@bpmn-io/properties-panel';
 
 import { get, isNumber, isNil } from 'min-dash';
 

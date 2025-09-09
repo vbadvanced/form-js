@@ -1,4 +1,4 @@
-import { CheckboxEntry, isCheckboxEntryEdited } from '@vbadvanced/properties-panel';
+import { CheckboxEntry, isCheckboxEntryEdited } from '@bpmn-io/properties-panel';
 
 import { get } from 'min-dash';
 

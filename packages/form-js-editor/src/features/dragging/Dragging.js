@@ -1,7 +1,7 @@
-import dragula from '@vbadvanced/draggle';
+import dragula from '@bpmn-io/draggle';
 
 import { set as setCursor } from '../../render/util/Cursor';
-import { getAncestryList } from '@vbadvanced/form-js-viewer';
+import { getAncestryList } from '@bpmn-io/form-js-viewer';
 
 export const DRAG_CONTAINER_CLS = 'fjs-drag-container';
 export const DROP_CONTAINER_VERTICAL_CLS = 'fjs-drop-container-vertical';
@@ -26,7 +26,7 @@ export class Dragging {
    * @param { import('../../core/FormLayoutValidator').FormLayoutValidator } formLayoutValidator
    * @param { import('../../core/EventBus').EventBus } eventBus
    * @param { import('../modeling/Modeling').Modeling } modeling
-   * @param { import('@vbadvanced/form-js-viewer').PathRegistry } pathRegistry
+   * @param { import('@bpmn-io/form-js-viewer').PathRegistry } pathRegistry
    */
   constructor(formFieldRegistry, formLayouter, formLayoutValidator, eventBus, modeling, pathRegistry) {
     this._formFieldRegistry = formFieldRegistry;

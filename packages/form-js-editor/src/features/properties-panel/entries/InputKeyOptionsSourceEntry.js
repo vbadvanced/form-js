@@ -1,7 +1,7 @@
-import { TextFieldEntry, isTextFieldEntryEdited } from '@vbadvanced/properties-panel';
+import { TextFieldEntry, isTextFieldEntryEdited } from '@bpmn-io/properties-panel';
 import { get } from 'min-dash';
 import { useService } from '../hooks';
-import { OPTIONS_SOURCES, OPTIONS_SOURCES_PATHS } from '@vbadvanced/form-js-viewer';
+import { OPTIONS_SOURCES, OPTIONS_SOURCES_PATHS } from '@bpmn-io/form-js-viewer';
 
 export function InputKeyOptionsSourceEntry(props) {
   const { editField, field, id } = props;

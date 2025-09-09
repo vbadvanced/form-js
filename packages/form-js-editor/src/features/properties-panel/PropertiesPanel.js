@@ -1,4 +1,4 @@
-import { PropertiesPanel as BasePropertiesPanel } from '@vbadvanced/properties-panel';
+import { PropertiesPanel as BasePropertiesPanel } from '@bpmn-io/properties-panel';
 
 import { useCallback, useMemo, useState, useLayoutEffect } from 'preact/hooks';
 

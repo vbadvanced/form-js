@@ -1,6 +1,6 @@
 import { cleanup, fireEvent, render } from '@testing-library/preact/pure';
 
-import { SECURITY_ATTRIBUTES_DEFINITIONS } from '@vbadvanced/form-js-viewer';
+import { SECURITY_ATTRIBUTES_DEFINITIONS } from '@bpmn-io/form-js-viewer';
 
 import { SecurityAttributesGroup } from '../../../../../src/features/properties-panel/groups';
 

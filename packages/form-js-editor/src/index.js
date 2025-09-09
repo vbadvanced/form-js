@@ -1,6 +1,6 @@
 import { FormEditor } from './FormEditor';
 
-import { schemaVersion } from '@vbadvanced/form-js-viewer';
+import { schemaVersion } from '@bpmn-io/form-js-viewer';
 
 export { FormEditor, schemaVersion };
 

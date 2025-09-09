@@ -1,4 +1,4 @@
-import { Errors, FormContext, Numberfield, Description, Label } from '@vbadvanced/form-js-viewer';
+import { Errors, FormContext, Numberfield, Description, Label } from '@bpmn-io/form-js-viewer';
 
 import { useContext } from 'preact/hooks';
 

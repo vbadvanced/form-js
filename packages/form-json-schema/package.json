@@ -1,5 +1,5 @@
 {
-  "name": "@vbadvanced/form-json-schema",
+  "name": "@bpmn-io/form-json-schema",
   "version": "1.16.0",
   "description": "JSON Schema for form-js",
   "files": [

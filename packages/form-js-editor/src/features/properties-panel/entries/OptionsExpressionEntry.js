@@ -1,7 +1,7 @@
-import { FeelEntry, isFeelEntryEdited } from '@vbadvanced/properties-panel';
+import { FeelEntry, isFeelEntryEdited } from '@bpmn-io/properties-panel';
 import { get } from 'min-dash';
 import { useService, useVariables } from '../hooks';
-import { OPTIONS_SOURCES, OPTIONS_SOURCES_PATHS } from '@vbadvanced/form-js-viewer';
+import { OPTIONS_SOURCES, OPTIONS_SOURCES_PATHS } from '@bpmn-io/form-js-viewer';
 
 export function OptionsExpressionEntry(props) {
   const { editField, field, id } = props;

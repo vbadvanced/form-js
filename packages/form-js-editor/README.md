@@ -1,17 +1,17 @@
-# @vbadvanced/form-js-editor
+# @bpmn-io/form-js-editor
 
 An editor to create forms that can be displayed with the [form-js viewer](../form-js-viewer).
 
 ## Installation
 
 ```
-npm install @vbadvanced/form-js-editor
+npm install @bpmn-io/form-js-editor
 ```
 
 ## Usage
 
 ```javascript
-import { FormEditor } from '@vbadvanced/form-js-editor';
+import { FormEditor } from '@bpmn-io/form-js-editor';
 
 const schema = {
   type: 'default',
@@ -45,8 +45,8 @@ For proper styling include the necessary stylesheets, and font used:
   href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,600;1,400&display=swap"
   rel="stylesheet" />
 
-<link rel="stylesheet" href="https://unpkg.com/@vbadvanced/form-js@0.10.0/dist/assets/form-js.css" />
-<link rel="stylesheet" href="https://unpkg.com/@vbadvanced/form-js@0.10.0/dist/assets/form-js-editor.css" />
+<link rel="stylesheet" href="https://unpkg.com/@bpmn-io/form-js@0.10.0/dist/assets/form-js.css" />
+<link rel="stylesheet" href="https://unpkg.com/@bpmn-io/form-js@0.10.0/dist/assets/form-js-editor.css" />
 ```
 
 ## API
@@ -56,7 +56,7 @@ For proper styling include the necessary stylesheets, and font used:
 Create a new form editor with options `{ container?: HTMLElement }`.
 
 ```javascript
-import { FormEditor } from '@vbadvanced/form-js-editor';
+import { FormEditor } from '@bpmn-io/form-js-editor';
 
 const formEditor = new FormEditor({
   container: document.querySelector('#form-editor'),

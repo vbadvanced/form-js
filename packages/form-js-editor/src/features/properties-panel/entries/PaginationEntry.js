@@ -1,6 +1,6 @@
 import { get, isNumber } from 'min-dash';
 
-import { ToggleSwitchEntry, isToggleSwitchEntryEdited } from '@vbadvanced/properties-panel';
+import { ToggleSwitchEntry, isToggleSwitchEntryEdited } from '@bpmn-io/properties-panel';
 
 export function PaginationEntry(props) {
   const { editField, field } = props;

@@ -2,7 +2,7 @@ import { get } from 'min-dash';
 
 import { useService, useVariables } from '../hooks';
 
-import { FeelTemplatingEntry, isFeelEntryEdited } from '@vbadvanced/properties-panel';
+import { FeelTemplatingEntry, isFeelEntryEdited } from '@bpmn-io/properties-panel';
 
 export function HtmlEntry(props) {
   const { editField, field } = props;

@@ -5,9 +5,9 @@ import {
   OptionsExpressionEntry,
 } from '../entries';
 
-import { getOptionsSource, OPTIONS_SOURCES } from '@vbadvanced/form-js-viewer';
+import { getOptionsSource, OPTIONS_SOURCES } from '@bpmn-io/form-js-viewer';
 
-import { Group, ListGroup } from '@vbadvanced/properties-panel';
+import { Group, ListGroup } from '@bpmn-io/properties-panel';
 
 import { OPTIONS_INPUTS, hasOptionsGroupsConfigured } from '../Util';
 

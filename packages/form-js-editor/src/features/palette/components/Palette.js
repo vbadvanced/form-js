@@ -1,14 +1,14 @@
 import { useCallback, useEffect, useRef, useState } from 'preact/hooks';
 
 import { useService } from '../../../render/hooks';
-import { sanitizeImageSource } from '@vbadvanced/form-js-viewer';
+import { sanitizeImageSource } from '@bpmn-io/form-js-viewer';
 
 import { CloseIcon, SearchIcon, iconsByType } from '../../../render/components/icons';
 import { Slot } from '../../render-injection/slot-fill';
 import { PaletteEntry } from './PaletteEntry';
 
 /**
- * @typedef { import('@vbadvanced/form-js-viewer').FormFields } FormFields
+ * @typedef { import('@bpmn-io/form-js-viewer').FormFields } FormFields
  *
  * @typedef { {
  *  label: string,

@@ -1,4 +1,4 @@
-import { clone } from '@vbadvanced/form-js-viewer';
+import { clone } from '@bpmn-io/form-js-viewer';
 
 import { bootstrapFormEditor, insertStyles, inject } from '../../../TestHelper';
 

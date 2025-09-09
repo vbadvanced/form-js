@@ -4,6 +4,6 @@ import DraggableIcon from './Draggable.svg';
 import SearchIcon from './Search.svg';
 import EmptyFormIcon from './EmptyForm.svg';
 
-export { iconsByType } from '@vbadvanced/form-js-viewer';
+export { iconsByType } from '@bpmn-io/form-js-viewer';
 
 export { CloseIcon, DeleteIcon, DraggableIcon, SearchIcon, EmptyFormIcon };

@@ -1,4 +1,4 @@
-import { ExpressionField, iconsByType } from '@vbadvanced/form-js-viewer';
+import { ExpressionField, iconsByType } from '@bpmn-io/form-js-viewer';
 import { editorFormFieldClasses } from '../Util';
 import { useService } from '../../hooks';
 

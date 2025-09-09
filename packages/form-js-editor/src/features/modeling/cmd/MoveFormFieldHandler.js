@@ -7,8 +7,8 @@ export class MoveFormFieldHandler {
    * @constructor
    * @param { import('../../../FormEditor').FormEditor } formEditor
    * @param { import('../../../core/FormFieldRegistry').FormFieldRegistry } formFieldRegistry
-   * @param { import('@vbadvanced/form-js-viewer').PathRegistry } pathRegistry
-   * @param { import('@vbadvanced/form-js-viewer').FormLayouter } formLayouter
+   * @param { import('@bpmn-io/form-js-viewer').PathRegistry } pathRegistry
+   * @param { import('@bpmn-io/form-js-viewer').FormLayouter } formLayouter
    */
   constructor(formEditor, formFieldRegistry, pathRegistry, formLayouter) {
     this._formEditor = formEditor;

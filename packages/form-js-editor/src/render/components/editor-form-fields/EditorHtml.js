@@ -1,4 +1,4 @@
-import { Html } from '@vbadvanced/form-js-viewer';
+import { Html } from '@bpmn-io/form-js-viewer';
 import { editorFormFieldClasses } from '../Util';
 import { useService } from '../../hooks';
 

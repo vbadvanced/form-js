@@ -1,17 +1,17 @@
-# @vbadvanced/form-js-viewer
+# @bpmn-io/form-js-viewer
 
 This library exports a form viewer for viewing and submitting forms. Use [our editor](../form-js-editor) to create and edit forms.
 
 ## Installation
 
 ```
-npm install @vbadvanced/form-js-viewer
+npm install @bpmn-io/form-js-viewer
 ```
 
 ## Usage
 
 ```javascript
-import { Form } from '@vbadvanced/form-js-viewer';
+import { Form } from '@bpmn-io/form-js-viewer';
 
 const schema = {
   type: 'default',
@@ -59,7 +59,7 @@ For proper styling include the `form-js.css` stylesheet and font used:
   href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,600;1,400&display=swap"
   rel="stylesheet" />
 
-<link href="https://unpkg.com/@vbadvanced/form-js/dist/assets/form-js.css" rel="stylesheet" />
+<link href="https://unpkg.com/@bpmn-io/form-js/dist/assets/form-js.css" rel="stylesheet" />
 ```
 
 ## API
@@ -69,7 +69,7 @@ For proper styling include the `form-js.css` stylesheet and font used:
 Create a new form with options `{ container?: HTMLElement }`.
 
 ```javascript
-import { Form } from '@vbadvanced/form-js-viewer';
+import { Form } from '@bpmn-io/form-js-viewer';
 
 const form = new Form({
   container: document.querySelector('#form'),

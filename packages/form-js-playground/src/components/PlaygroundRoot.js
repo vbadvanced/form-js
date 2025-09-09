@@ -4,9 +4,9 @@ import download from 'downloadjs';
 
 import classNames from 'classnames';
 
-import { Form, getSchemaVariables } from '@vbadvanced/form-js-viewer';
+import { Form, getSchemaVariables } from '@bpmn-io/form-js-viewer';
 
-import { FormEditor } from '@vbadvanced/form-js-editor';
+import { FormEditor } from '@bpmn-io/form-js-editor';
 
 import { EmbedModal } from './EmbedModal';
 import { JSONEditor } from './JSONEditor';
