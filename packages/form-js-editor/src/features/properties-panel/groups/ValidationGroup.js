@@ -113,9 +113,7 @@ export function ValidationGroup(field, editField) {
     isEdited: isTextFieldEntryEdited,
     onChange,
     isDefaultVisible: (field) =>
-      INPUTS.includes(field.type) &&
-      type === 'textfield' &&
-      isCustomValidation && hasPattern,
+      INPUTS.includes(field.type) && type === 'textfield' && isCustomValidation && hasPattern,
   });
 
   entries.push(
